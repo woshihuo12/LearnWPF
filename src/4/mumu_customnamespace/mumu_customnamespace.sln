@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_customnamespace", "mumu_customnamespace\mumu_customnamespace.csproj", "{B565B526-640F-4655-BA77-C18DCB2CBB35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_customlib", "mumu_customlib\mumu_customlib.csproj", "{8CA83DB6-DA37-495F-BB67-66E27F6CE506}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B565B526-640F-4655-BA77-C18DCB2CBB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B565B526-640F-4655-BA77-C18DCB2CBB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B565B526-640F-4655-BA77-C18DCB2CBB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B565B526-640F-4655-BA77-C18DCB2CBB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA83DB6-DA37-495F-BB67-66E27F6CE506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA83DB6-DA37-495F-BB67-66E27F6CE506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA83DB6-DA37-495F-BB67-66E27F6CE506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA83DB6-DA37-495F-BB67-66E27F6CE506}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

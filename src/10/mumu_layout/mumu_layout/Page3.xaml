@@ -1,0 +1,17 @@
+﻿<Page x:Class="mumu_layout.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="233" d:DesignWidth="251"
+	Title="第三片桃林仿真by木木">
+    <Border BorderThickness = "2" BorderBrush = "Black" Margin = "5">
+        <WrapPanel ItemWidth = "120">
+            <Button Background="#00000000"  MinWidth = "50"  Content = "1"/>
+            <Button Background ="#FFFFCCFF" MinWidth = "50"  Content = "2"/>
+            <Button Background ="#FFFF9BFF" MinWidth = "50"  Content = "3"/>
+            <Button Background ="#FFFF00FF" MinWidth = "150"  Content = "4 MinWidth = 150"/>
+         </WrapPanel>
+    </Border>
+</Page>

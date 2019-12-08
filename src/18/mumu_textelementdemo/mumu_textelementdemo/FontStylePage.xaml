@@ -1,0 +1,26 @@
+﻿<Page x:Class="mumu_textelementdemo.FontStylePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FontStylePage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderThickness="1" BorderBrush="AliceBlue" Margin="5">
+            <StackPanel  TextBlock.FontSize="30" TextBlock.FontFamily="华文仿宋">
+                <TextBlock  Text="字体: 华文仿宋"/>
+                <TextBlock Text="Hello 文本 fontStyle Normal"  Margin="5"/>
+                <TextBlock Text="Hello 文本 fontStyle Italic" FontStyle="Italic" Margin="5"/>
+                <TextBlock Text="Hello 文本 fontStyle Oblique" FontStyle="Oblique" Margin="5"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" BorderThickness="1" BorderBrush="AliceBlue" Margin="5">
+            <StackPanel Grid.Row="1" TextBlock.FontSize="30" TextBlock.FontFamily="Gill Sans MT" >
+                <TextBlock Text="Hello 文本 fontStyle Normal"  Margin="5" />
+                <TextBlock Text="Hello 文本 fontStyle Italic" FontStyle="Italic" Margin="5"/>
+                <TextBlock Text="Hello 文本 fontStyle Oblique" FontStyle="Oblique" Margin="5"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

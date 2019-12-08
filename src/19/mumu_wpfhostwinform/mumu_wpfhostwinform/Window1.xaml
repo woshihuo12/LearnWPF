@@ -1,0 +1,27 @@
+﻿<Window x:Class="mumu_wpfhostwinform.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+    Title="在WPF窗口中嵌入WinForm内容" Height="631" Width="434" Loaded="Window_Loaded" > 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="Auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="combobox" Margin="5" Height="20" SelectionChanged="ComboBox_SelectionChanged">
+        </ComboBox>
+        <Button x:Name="btn" Grid.Row="3"  Content="在WPF中嵌入WinForm内容"  Margin="5"/>
+        <TextBox x:Name="textbox" Grid.Row="1" Text ="在WPF中嵌入WinForm内容"  Margin="5"/>
+        <RadioButton  x:Name="radiobt" Grid.Row="2" Content="在WPF中嵌入WinForm内容" Margin="5"/>
+        <WindowsFormsHost Grid.Column="1" Grid.RowSpan="5" >
+            <wf:PropertyGrid x:Name="propertyGrid"/>
+        </WindowsFormsHost>
+    </Grid>
+</Window>

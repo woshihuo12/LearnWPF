@@ -1,0 +1,67 @@
+﻿<Page 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="弧段示例" >
+    <Canvas>
+        <!--绘制两个椭圆的背景-->
+        <Ellipse Stroke="Black" StrokeDashArray="5,3" Width="128" Height="96" Canvas.Left="100" Canvas.Top="0">
+            
+        </Ellipse>
+        <Ellipse Stroke="Black" StrokeDashArray="5,3" Width="128" Height="96" Canvas.Left="36" Canvas.Top="48">
+        </Ellipse>
+        
+        <!-- 逆时针 (默认值), 小圆弧 (默认值) -->
+       <!-- 
+        <Path Stroke="Red" StrokeThickness="3">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="100 48">
+                        <ArcSegment Point="164 96" Size="64 48" />
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        <TextBlock Foreground="Red" Text="SweepDirection=CounterClockwise IsLargeArc=small" FontSize="4" Height="11.6" Canvas.Left="109.6" Canvas.Top="99.2" Width="74" />
+    -->    
+        <!-- 顺时针, 小圆弧 (默认值) -->
+<!--        
+        <Path Stroke="Blue" StrokeThickness="3">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="100 48">
+                        <ArcSegment Point="164 96" Size="64 48" SweepDirection="Clockwise"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        <TextBlock Foreground="Blue" Text="SweepDirection=Clockwise IsLargeArc=small" FontSize="4" Height="11.6" Canvas.Left="109.6" Canvas.Top="35.6" Width="74" />
+-->
+        <!-- 逆时针 (默认值), 大圆弧 -->
+        
+        <Path Stroke="Green" StrokeThickness="3">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="100 48">
+                        <ArcSegment Point="164 96" Size="64 48" IsLargeArc="True" RotationAngle="45"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        
+        <!-- 顺时针, 大圆弧 -->
+<!--        
+        <Path Stroke="Purple" StrokeThickness="3">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="100 48">
+                        <ArcSegment Point="164 96" Size="64 48" IsLargeArc="True" SweepDirection="Clockwise"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+-->
+        <Path Stroke="Purple" StrokeThickness="3" Data="M100 48 A64,48,0 1 0 164 96">
+            
+        </Path>
+    </Canvas>
+</Page>

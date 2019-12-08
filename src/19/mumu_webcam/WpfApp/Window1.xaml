@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c="clr-namespace:ManagedCpp;assembly=mumu_webcam" SizeToContent="WidthAndHeight"
+    Title="摄像程序" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Margin="5">
+                <Bold>摄像程序</Bold><LineBreak/>
+                该程序是一个在WPF窗口里嵌入Win32内容的实例。当你按下Tab键的时候，<LineBreak/>
+                焦点可以从上面的‘开始’按钮切换到Win32内容当中，然后再将焦点切<LineBreak/>
+                换到下方的‘确定’按钮<LineBreak/>
+                如果按下Shift+Tab则焦点会反方向变化<LineBreak/>
+                当按下Alt+a 焦点会切换到视频名称的编辑框。<LineBreak/>
+                按下Alt+b则焦点切换到制作人编辑框。
+            </TextBlock>
+            <Button Content="开始" HorizontalAlignment="Right" Width="80"  Margin="5"/>
+        </StackPanel>
+        <c:MyHwndHost  Grid.Row="1"/>
+        <WrapPanel HorizontalAlignment="Right" Grid.Row="2">
+            <Button Width="60" Content="确定"  Click="Button_Click"/>
+            <Button Width="60" Content="退出" />
+        </WrapPanel>
+    </Grid>
+</Window>

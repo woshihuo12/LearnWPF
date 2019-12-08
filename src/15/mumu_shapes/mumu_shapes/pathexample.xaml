@@ -1,0 +1,47 @@
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Microsoft.Samples.Graphics.PathExample"
+    WindowTitle="Path Example">
+<StackPanel>
+  <Border>
+    <Border.Background>
+      <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+        <LinearGradientBrush.GradientStops>
+          <GradientStop Color="#CCCCFF" Offset="0" />
+          <GradientStop Color="AliceBlue" Offset="0.25" />
+        </LinearGradientBrush.GradientStops>
+      </LinearGradientBrush>
+    </Border.Background>
+    <TextBlock Margin="10" HorizontalAlignment="Left"> 
+      Path Ê¾Àý
+    </TextBlock>
+  </Border>    
+
+  <StackPanel Margin="10"> 
+    
+    <Border >
+                <Canvas Height="400" Width="400">
+                    <Path Stroke="Black" StrokeThickness="1">
+                        <Path.Data>
+                            <PathGeometry>
+                                <PathGeometry.Figures>
+                                    <PathFigureCollection>
+                                        <PathFigure StartPoint="10,100">
+                                            <PathFigure.Segments>
+                                                <PathSegmentCollection>
+                                                    <BezierSegment Point1="100,0" Point2="200,200" Point3="300,100" />
+                                                </PathSegmentCollection>
+                                            </PathFigure.Segments>
+                                        </PathFigure>
+                                    </PathFigureCollection>
+                                </PathGeometry.Figures>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Border>
+
+  </StackPanel>
+</StackPanel>
+</Page>

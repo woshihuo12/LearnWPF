@@ -1,0 +1,62 @@
+﻿<Page x:Class="mumu_layout.Page6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="564" d:DesignWidth="406"
+	Title="星号尺寸Demoby老顽童">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row = "0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "100"/>
+                <ColumnDefinition Width = "*"/>
+            </Grid.ColumnDefinitions>
+            <Button Background="#00000000" Grid.Column = "0"  Content = "Width = 100"/>
+            <Button Background ="#FFFFCCFF" Grid.Column = "1"  Content = "Width = *"/>
+        </Grid>
+        <Grid Grid.Row = "1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "100"/>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "*"/>
+            </Grid.ColumnDefinitions>
+            <Button Background="#00000000" Grid.Column = "0"  Content = "Width = 100"/>
+            <Button Background ="#FFFFCCFF" Grid.Column = "1"  Content = "Width = *"/>
+            <Button Background ="#FFFF9BFF" Grid.Column = "2"  Content = "Width = *"/>
+            <Button Background ="#FFFF00FF" Grid.Column = "3"  Content = "Width = *"/>
+        </Grid>
+        <Grid Grid.Row = "2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "100"/>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "2*"/>
+                <ColumnDefinition Width = "*"/>
+            </Grid.ColumnDefinitions>
+            <Button Background="#00000000" Grid.Column = "0"  Content = "Width = 100"/>
+            <Button Background ="#FFFFCCFF" Grid.Column = "1"  Content = "Width = *"/>
+            <Button Background ="#FFFF9BFF" Grid.Column = "2"  Content = "Width = 2*"/>
+            <Button Background ="#FFFF00FF" Grid.Column = "3"  Content = "Width = *"/>
+        </Grid>
+        <Grid Grid.Row = "3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "100"/>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "2*"/>
+                <ColumnDefinition Width = "*"/>
+            </Grid.ColumnDefinitions>
+            <Button Background="#00000000" Grid.Column = "0"  Content = "Width = 100"/>
+            <Button Background ="#FFFFCCFF" Grid.Column = "1"  Content = "Width = 3*"/>
+            <Button Background ="#FFFF9BFF" Grid.Column = "2"  Content = "Width = 6*"/>
+            <Button Background ="#FFFF00FF" Grid.Column = "3"  Content = "Width = 3*"/>
+        </Grid>
+    </Grid>
+</Page>

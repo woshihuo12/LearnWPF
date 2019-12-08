@@ -1,0 +1,33 @@
+﻿<Window x:Class="mumu_ListBoxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <GroupBox Margin="5">
+            <GroupBox.Header>
+                <TextBlock Text="选择模式"></TextBlock>
+            </GroupBox.Header>
+            <GroupBox.Content>
+                <StackPanel Margin="3" Background="AliceBlue" RadioButton.Checked="Radio_Checked">
+                    <RadioButton Name="radioSingle">Single</RadioButton>
+                    <RadioButton Name="radioMultiple">Multiple</RadioButton>
+                    <RadioButton Name="radioExtended">Extended</RadioButton>
+                </StackPanel>
+            </GroupBox.Content>
+        </GroupBox>
+        <GroupBox Margin="5">
+            <GroupBox.Header>
+                <TextBlock>效果</TextBlock>
+            </GroupBox.Header>
+            <GroupBox.Content>
+                <ListBox Name="lb">
+                    <ListBoxItem>Item 1</ListBoxItem>
+                    <ListBoxItem>Item 2</ListBoxItem>
+                    <ListBoxItem>Item 3</ListBoxItem>
+                    <ListBoxItem>Item 4</ListBoxItem>
+                    <ListBoxItem>Item 5</ListBoxItem>
+                </ListBox>
+            </GroupBox.Content>
+        </GroupBox>
+    </StackPanel>
+</Window>

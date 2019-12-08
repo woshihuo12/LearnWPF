@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_menudemo", "mumu_menudemo\mumu_menudemo.csproj", "{7363E020-2E64-4595-A717-A2F86B7C8BF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7363E020-2E64-4595-A717-A2F86B7C8BF4}.Debug|x86.ActiveCfg = Debug|x86
+		{7363E020-2E64-4595-A717-A2F86B7C8BF4}.Debug|x86.Build.0 = Debug|x86
+		{7363E020-2E64-4595-A717-A2F86B7C8BF4}.Release|x86.ActiveCfg = Release|x86
+		{7363E020-2E64-4595-A717-A2F86B7C8BF4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

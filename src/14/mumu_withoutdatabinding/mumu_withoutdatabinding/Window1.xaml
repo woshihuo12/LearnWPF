@@ -1,0 +1,29 @@
+﻿<Window x:Class="mumu_withoutdatabinding.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="人员信息" Height="135"
+  Width="200" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center">姓名:</TextBlock>
+        <TextBox Name="nameTextBox" Grid.Row="0" Grid.Column="1" Margin="5" TextChanged="nameTextBox_TextChanged" />
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center" >年龄:</TextBlock>
+        <TextBox Name="ageTextBox" Grid.Row="1" Grid.Column="1" Margin="5" TextChanged="ageTextBox_TextChanged" />
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Name="nextButton" Grid.Row="0" Grid.Column="0" Margin="5" Click="nextButton_Click">下一个</Button>
+            <Button Name="modifyButton" Grid.Row="0" Grid.Column="1" Margin="5" Click="modifyButton_Click" >修改</Button>
+        </Grid>
+    </Grid>
+</Window>

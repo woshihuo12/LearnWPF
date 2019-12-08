@@ -1,0 +1,32 @@
+﻿<Page 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Light">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Frame Source="AmbientLightDemo.xaml" />
+            <TextBlock Text="AmbientLight" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Frame Source="DirectionalLightDemo.xaml" />
+            <TextBlock Text="DirectionalLight" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Frame Source="PointLightDemo.xaml" />
+            <TextBlock Text="PointLight" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Frame Source="SpotLightDemo.xaml" />
+            <TextBlock Text="SpotLight" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+    </Grid>
+    
+</Page>

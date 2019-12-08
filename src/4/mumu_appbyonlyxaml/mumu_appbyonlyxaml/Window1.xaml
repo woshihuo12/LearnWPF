@@ -1,0 +1,23 @@
+﻿<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Window1"
+    Title="AppByOnlyXAML" Height="200" Width="600" Background="AliceBlue">
+    <StackPanel  Width="500">
+        
+        <Button Name="btn" Content="MyButton" Click="btn_Click">
+            <Button.Background>
+                <x:Static Member="SystemColors.ActiveCaptionBrush"/>
+            </Button.Background>
+        </Button>
+        <Ellipse Name="elip" Stroke="Red" Height="60" StrokeThickness="3" Fill="White"/>
+        <x:Code>
+            <![CDATA[
+            private void btn_Click(object sender, RoutedEventArgs e)
+            {
+                 if (elip != null)
+                     elip.Stroke = new SolidColorBrush(Colors.Blue);
+             }]]>
+            </x:Code>
+    </StackPanel>
+</Window>

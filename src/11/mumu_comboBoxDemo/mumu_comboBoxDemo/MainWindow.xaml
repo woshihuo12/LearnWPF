@@ -1,0 +1,43 @@
+﻿<Window x:Class="mumu_comboBoxDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="天龙八部人物谱" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.7*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row ="0"  Text="天龙八部" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+        <ComboBox Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" ScrollViewer.CanContentScroll ="false" IsEditable="True" MaxDropDownHeight="620"
+                  ><!--.TextPath="Name"-->
+            <StackPanel Orientation="Horizontal" Margin="5"  TextSearch.Text="段誉"><!--Name="段誉"-->
+                <Image Source="duanyu.jpg"/>
+                <StackPanel Width="200" >
+                    <TextBlock Margin="5.0" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Text="段誉"/>
+                    <TextBlock Margin="5.0" FontSize="14" TextWrapping="Wrap">
+                    看他一袭青衫，容仪如玉，明净柔和，有着说不出的与生俱来的优雅气质。他毫无世俗间的心机，纯作一派天真，爽朗而通达，隽秀的脸上永远也不会显露出尘世间经常可以见到的冷酷傲慢的表情。他是理想中的书生形象，即使其迂腐的一面也让人觉出可喜可爱。
+                    </TextBlock>
+                 </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5" TextSearch.Text="萧峰"><!--Name="萧峰"-->
+                <Image Source="quanfeng.jpg"/>
+                <StackPanel Width="200" >
+                    <TextBlock Margin="5.0" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Text="萧峰"/>
+                    <TextBlock Margin="5.0" FontSize ="14" TextWrapping="Wrap">
+                    在萧峰的面前，既往的一切陈述都变得苍白和空洞，无可阻挡地进行价值的消解和缺失。萧峰的出现是空谷来风，是平地的一声春雷，是我们所有凡人琐屑生活中梦寐以求渴望的高贵气息，是英雄有力、骄傲、坚定的自白。段誉喝彩道：“好一条大汉！这定是燕赵北国的悲歌慷慨之士。”仅此一句话，就足可表现出萧峰天人般大气磅礴、神威凛凛之气势。
+                    </TextBlock>
+                 </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5" TextSearch.Text="虚竹" ><!--Name="虚竹"-->
+                <Image Source="xuzhu1.jpg"/>
+                <StackPanel Width="200" >
+                    <TextBlock Margin="5.0" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Text="虚竹"/>
+                    <TextBlock Margin="5.0" FontSize ="14" TextWrapping="Wrap">
+                    虚竹对佛的信仰不可置疑，但为何他却屡犯死规，更破了佛家杀戒、淫戒、荤戒三大戒。这其实是人性的力量，佛家处处限制人欲、人性，而虚竹出寺之后，内心深处的人性人欲被激发，对佛的信仰终究敌不过人性人欲的力量，最终破戒、还俗。
+                    </TextBlock>
+                 </StackPanel>
+            </StackPanel>
+        </ComboBox>
+            
+    </Grid>
+</Window>

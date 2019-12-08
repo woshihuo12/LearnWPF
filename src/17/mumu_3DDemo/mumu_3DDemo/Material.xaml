@@ -1,0 +1,32 @@
+﻿<Page
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+	Title="Material">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Frame Source="EmissiveMaterialDemo.xaml" />
+            <TextBlock Text="EmissiveMaterial" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Frame Source="SpecularMaterialDemo.xaml" />
+            <TextBlock Text="SpecularMaterial" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Frame Source="MaterialGroupDemo1.xaml" />
+            <TextBlock Text="MaterialGroup" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Frame Source="MaterialGroupDemo2.xaml" />
+            <TextBlock Text="MaterialGroup" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,11 @@
+﻿<Application x:Class="mumu_Button01.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="MyBrush" Color="Gold"/>
+        <Style x:Key="GreenButtonStyle">
+            <Setter Property="Control.Background" Value="Green"/>
+        </Style>
+    </Application.Resources>
+</Application>

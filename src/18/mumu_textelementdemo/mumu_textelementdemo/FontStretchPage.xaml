@@ -1,0 +1,27 @@
+﻿<Page x:Class="mumu_textelementdemo.FontStretchPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FontStretchPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderThickness="1" BorderBrush="AliceBlue" Margin="5">
+            <StackPanel  TextBlock.FontSize="30" TextBlock.FontFamily="华文仿宋">
+                <TextBlock  Text="字体: 华文仿宋"/>
+                <TextBlock  Text="Hello 文本! Condensed" FontStretch="Condensed"/>
+                <TextBlock  Text="Hello 文本! Normal" FontStretch="Normal"/>
+                <TextBlock  Text="Hello 文本! ExtraExpanded" FontStretch="ExtraExpanded"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" BorderThickness="1" BorderBrush="AliceBlue" Margin="5">
+            <StackPanel Grid.Row="1" TextBlock.FontSize="30" TextBlock.FontFamily="Gill Sans MT">
+                <TextBlock  Text="字体：Gill Sans MT"/>
+                <TextBlock  Text="Hello 文本! Condensed" FontStretch="Condensed"/>
+                <TextBlock  Text="Hello 文本! Normal" FontStretch="Normal"/>
+                <TextBlock  Text="Hello 文本! ExtraExpanded" FontStretch="ExtraExpanded"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

@@ -1,0 +1,41 @@
+﻿
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowTitle="矩形示例">
+    <StackPanel>
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#CCCCFF" Offset="0" />
+                        <GradientStop Color="AliceBlue" Offset="0.25" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBlock Margin="10" HorizontalAlignment="Left"> 
+    矩形示例
+            </TextBlock>
+        </Border>
+
+        <StackPanel Margin="10">
+            <Border >
+                <Canvas Width="600" Height="400" >
+                    <Rectangle Width="200" Height="100" Fill="Blue" Stroke="Black" Canvas.Left="50" Canvas.Top="21" />
+                    <TextBlock  Canvas.Left="70" Canvas.Top="125" Height="15" Width="178">
+                        RadiusX=0 RadiusY=0
+                    </TextBlock>
+                    <Rectangle Width="200" Height="100" Fill="Blue" Stroke="Black" RadiusX="20" RadiusY="20" Canvas.Left="50" Canvas.Top="161"/>
+                    <TextBlock  Canvas.Left="70" Canvas.Top="275" Height="15" Width="178">
+                        RadiusX=20 RadiusY=20
+                    </TextBlock>
+                    <Rectangle Width="200" Height="100" Fill="Blue" Stroke="Black" RadiusX="100" RadiusY="50" Canvas.Left="300" Canvas.Top="21"/>
+                    <TextBlock  Canvas.Left="320" Canvas.Top="127" Height="15" Width="178">
+                        RadiusX=100 RadiusY=50
+                    </TextBlock>
+                    <Rectangle Canvas.Left="300" Canvas.Top="161" Fill="Blue" Height="100" RadiusX="110" RadiusY="60" Stroke="Black" Width="200" />
+                    <TextBlock Canvas.Left="320" Canvas.Top="267" Height="15" Width="178">RadiusX=110 RadiusY=60</TextBlock>
+                </Canvas>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</Page>

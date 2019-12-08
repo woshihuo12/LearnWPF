@@ -1,0 +1,21 @@
+﻿<Window x:Class="mumu_layout2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" SizeToContent="WidthAndHeight">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Page1.xaml">
+                <Frame Source="Page1.xaml"/>
+            </TabItem>
+            <TabItem Header="Page2.xaml">
+                <Frame Source="Page2.xaml"/>
+            </TabItem>
+            <TabItem Header="Page3.xaml">
+                <Frame Source="Page3.xaml"/>
+            </TabItem>
+            <TabItem Header="Page4.xaml">
+                <Frame Source="Page4.xaml"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

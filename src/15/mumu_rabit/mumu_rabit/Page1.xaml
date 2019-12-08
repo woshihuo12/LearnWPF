@@ -1,0 +1,124 @@
+﻿<Page x:Class="mumu_rabit.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page1" >
+    <Page.Resources>
+        <PathGeometry x:Key="leftearpath2" Figures="M140.5,140.11L127.5,117.61L126.5,112.11L132.5,105.11L136,102.61L142.5,101.61L145.5,105.11L156.5,132.61L140.5,140.11z"></PathGeometry>
+        <PathGeometry x:Key="leftearpath1" Figures="M223,126.777L221,117.11L219.333,110.444L219.333,102.444L222.667,98.11L227.667,96.11L235.333,95.444L237.333,98.11L238.667,105.444L237.667,110.444L238.667,118.11L238,122.777L223,126.777z"></PathGeometry>
+        <PathGeometry x:Key="rightearpath2" Figures="M184.5,128.61L184.5,101.11L186.5,99.11L193.5,96.61L202,98.61L206,101.11L204,114.11L203.5,130.11L184.5,128.61z"/>
+        <PathGeometry x:Key="rightearpath1" Figures="M274.667,100.444L270,108.444L267.333,115.444L267,122.11L272.667,123.777L281.333,126.444L283.333,120.777L287,118.444L289.667,113.777L291,107.444L284,101.11L274.667,100.444z"/>
+        
+        <PathGeometry x:Key="righteyepath1" Figures="M277.667,133.444L272.667,130.777L267,130.11L263,129.777L258,131.444L255,134.444L252.667,136.11L252.667,153.777L255.333,156.777L261.333,159.777L268.667,161.11L275.667,158.444L279.667,154.444L282,150.444L282.333,143.11L279.667,136.11L277.667,133.444z"/>
+    </Page.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="2">
+            <Grid Grid.Column="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.8*" />
+                    <RowDefinition Height="0.2*"/>
+                </Grid.RowDefinitions>
+                <Canvas  Background="AntiqueWhite" >
+                    <Canvas x:Name="rabit" MouseEnter="rabit_MouseEnter" MouseLeave="rabit_MouseLeave" Canvas.Left="0" Canvas.Top="0" Width="77.666" Height="96.666" Background="Azure" RenderTransformOrigin="0.5 0.5">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform x:Name="scale" ScaleX="1" ScaleY="1"/>
+                                <RotateTransform x:Name="rotate" Angle="0"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path x:Name="head" Fill="{Binding ElementName=headcolor,Path=Fill}"  
+                              Stretch="Fill" Stroke="{Binding ElementName=headcolor,Path=Fill}" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeStartLineCap="Flat" StrokeThickness="1" Width="78.666" Height="71.666" Canvas.Left="-0.5" Canvas.Top="25.5" Data="M214.667,131.11L213.667,148.11L214.333,159.444L217,167.777L220,179.11L225,187.777L238,192.11L267,191.777L271.667,190.444L279.333,189.444L285,178.777L288.333,166.444L291.333,154.444L290.667,132.11L287,129.11L282,126.444L266,121.444L239,121.777L223,126.11L214.667,131.11z"/>
+                        <Path x:Name="lefteye" Fill="White" Stretch="Fill" Stroke="#FFC9CACA" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeStartLineCap="Flat" StrokeThickness="1" Width="31" Height="32" Canvas.Left="8.5" Canvas.Top="33.833" Data="M230,132.11L226.333,134.777L222.667,143.444L223,150.11L227.333,156.11L232.667,159.777L242,160.777L248.667,157.11L252.667,153.11L252.667,136.11L245.333,130.11L234.333,129.777L230,132.11z"/>
+                        <Path x:Name="righteye" Fill="White" Stretch="Fill" Stroke="#FFC9CACA" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeStartLineCap="Flat" StrokeThickness="1" Width="30.666" Height="32.333" Canvas.Left="38.5" Canvas.Top="33.833" 
+                              Data="M277.667,133.444L272.667,130.777L267,130.11L263,129.777L258,131.444L255,134.444L252.667,136.11L252.667,153.777L255.333,156.777L261.333,159.777L268.667,161.11L275.667,158.444L279.667,154.444L282,150.444L282.333,143.11L279.667,136.11L277.667,133.444z"/>
+                        <Path x:Name="leftear" Fill="{Binding ElementName=earcolor,Path=Fill}" Stretch="Fill" 
+                              Stroke="{Binding ElementName=earcolor,Path=Fill}" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeStartLineCap="Flat" StrokeThickness="1" Width="20.334" Height="32.333" Canvas.Left="5.166" Canvas.Top="-0.5" 
+                              Data="{StaticResource leftearpath1}"/>
+                        <Path x:Name="rightear" Fill="{Binding ElementName=earcolor,Path=Fill}" Stretch="Fill" 
+                              Stroke="{Binding ElementName=earcolor,Path=Fill}" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="4" StrokeStartLineCap="Flat" StrokeThickness="1" Width="25" Height="27" Canvas.Left="52.833" Canvas.Top="4.5" 
+                              Data="{StaticResource rightearpath1}"/>
+                        <Ellipse x:Name="righteyeball" Width="5.334" Height="6" Canvas.Left="51.666" Canvas.Top="46" Fill="#FF231916"/>
+                        <Ellipse x:Name="lefteyeball"  Width="5.333" Height="6" Canvas.Left="21.333" Canvas.Top="46" Fill="#FF231916"/>
+                        <Line x:Name="mouth" Stroke="#FF231916" X1="32" Y1="89" X2="42.667" Y2="89"/>
+                    </Canvas>
+                </Canvas>
+                <TextBlock Margin="15" HorizontalAlignment="Left" Grid.Row="1"  Width="198">
+            使用Shape画成的兔子
+            <LineBreak/>
+                使用了5个Path
+                <LineBreak/>
+                1个Line
+                <LineBreak/>
+                2个Ellipse
+                </TextBlock>
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" BorderThickness="2" BorderBrush="Black">
+        <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <!--位置-->
+                <TextBlock Grid.Row="0" Margin="10">位置</TextBlock>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <TextBlock Margin="10">左边距</TextBlock>
+                    <TextBox Width="60" Text="{Binding ElementName=rabit, Path=(Canvas.Left), UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                    <TextBlock Margin="10">上边距</TextBlock>
+                    <TextBox Width="60" Text="{Binding ElementName=rabit, Path=(Canvas.Top), UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                </StackPanel>
+
+                <!--大小-->
+                <TextBlock Grid.Row="2" Margin="10">大小</TextBlock>
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <TextBlock Margin="10">水平方向缩放</TextBlock>
+                    <TextBox Width="40" Text="{Binding ElementName=scale, Path=ScaleX, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                    <TextBlock Margin="10">垂直方向缩放</TextBlock>
+                    <TextBox Width="40" Text="{Binding ElementName=scale, Path=ScaleY, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                </StackPanel>
+                
+                <StackPanel Grid.Row="4" Orientation="Horizontal">
+                    <TextBlock Margin="10">角度</TextBlock>
+                    <TextBox Width="40" Text="{Binding ElementName=rotate, Path=Angle, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                </StackPanel>
+                <!--颜色-->
+                <TextBlock Grid.Row="5" Margin="10">颜色</TextBlock>
+                <Grid Grid.Row="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="5" Grid.Row="0" Grid.Column="0">兔耳</TextBlock>
+                    <Button x:Name="earcolorbtn" Grid.Row="0" Grid.Column="1" Click="Button_Click">
+                        <Rectangle x:Name="earcolor" Width="20" Height="20" Stroke="Black " Fill="#FFC9CACA"/> 
+                    </Button>
+                    <TextBlock Margin="5" Grid.Row="0" Grid.Column="2">兔头</TextBlock>
+                    <Button x:Name="headcolorbtn" Grid.Row="0" Grid.Column="3" Click="Button_Click">
+                        <Rectangle x:Name="headcolor" Width="20" Height="20" Stroke="Black " Fill="#FFC9CACA"/>
+                    </Button>
+
+                </Grid>
+                <TextBlock  Grid.Row="10" Margin="3" TextWrapping="Wrap" Height="27" Canvas.Left="110" Canvas.Top="246" Width="156">
+    <LineBreak />
+    点<Hyperlink NavigateUri="Page4.xaml">这儿</Hyperlink>到下一个兔子
+                </TextBlock>
+            </Grid>
+            </Border>
+    </Grid>
+</Page>

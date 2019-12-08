@@ -1,0 +1,80 @@
+﻿<Page x:Class="mumu_brushes.VisualBrush"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VisualBrush" Width="400" Height="450">
+    <Page.Resources>
+        <LinearGradientBrush x:Key="ReflectionBrush"
+							 StartPoint="0,0"
+							 EndPoint="0,1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Offset="0"
+							  Color="#7FFFFFFF" />
+                <GradientStop Offset=".5"
+							  Color="Transparent" />
+                <GradientStop Offset="1"
+							  Color="Transparent" />
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+    </Page.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image x:Name="ElementVisual"
+				   Source="Images/battery.png"
+				   Stretch="Fill"
+				   Grid.Row="0" />
+
+        <Rectangle 
+					   Grid.Row="1"
+					   Width="{Binding ActualWidth, ElementName=ElementVisual}"
+					   Height="{Binding ActualHeight, ElementName=ElementVisual}">
+            <Rectangle.OpacityMask>
+                <LinearGradientBrush 
+							 StartPoint="0,0"
+							 EndPoint="0,1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0"
+							  Color="Red" />
+                        <GradientStop Offset=".5"
+							  Color="Transparent" />
+                        <GradientStop Offset="1"
+							  Color="Transparent" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Rectangle.OpacityMask>
+            <Rectangle.Fill>
+                <VisualBrush Visual="{Binding ElementName=ElementVisual}">
+                    <VisualBrush.RelativeTransform>
+                        <ScaleTransform ScaleX="1"
+											ScaleY="-1"
+											CenterX="0.5"
+											CenterY="0.5" />
+                    </VisualBrush.RelativeTransform>
+                </VisualBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle 
+					   Grid.Row="2"
+					   Width="{Binding ActualWidth, ElementName=ElementVisual}"
+					   Height="{Binding ActualHeight, ElementName=ElementVisual}">
+            <Rectangle.Fill>
+                <LinearGradientBrush 
+							 StartPoint="0,0"
+							 EndPoint="0,1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0"
+							  Color="Red" />
+                        <GradientStop Offset=".5"
+							  Color="Transparent" />
+                        <GradientStop Offset="1"
+							  Color="Transparent" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+    </Grid>
+</Page>

@@ -1,0 +1,11 @@
+﻿<Window x:Class="mumu_textblock.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TextBlockDemo" Height="300" Width="300">
+    <StackPanel>
+       <TextBlock>
+        <Run FontSize="30" TextDecorations="underline">木木,</Run>
+        <Run FontSize ="50" Foreground="Purple"> 北冥神功</Run>
+        </TextBlock> 
+    </StackPanel>
+</Window>

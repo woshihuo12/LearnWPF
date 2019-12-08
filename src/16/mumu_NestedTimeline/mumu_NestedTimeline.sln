@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_NestedTimeline", "mumu_NestedTimeline\mumu_NestedTimeline.csproj", "{6D5B316F-3B6C-41EC-AE29-BBAF1F5BB60A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D5B316F-3B6C-41EC-AE29-BBAF1F5BB60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5B316F-3B6C-41EC-AE29-BBAF1F5BB60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5B316F-3B6C-41EC-AE29-BBAF1F5BB60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5B316F-3B6C-41EC-AE29-BBAF1F5BB60A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

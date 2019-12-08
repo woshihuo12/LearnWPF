@@ -1,0 +1,22 @@
+﻿<Window x:Class="mumu_customCoordinate.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CustomCoordinate" Height="240" Width="220">
+    <Canvas Height="200" Width="200">
+        <Canvas.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleY="-1"/>
+                <TranslateTransform Y="200"/>
+            </TransformGroup>
+        </Canvas.RenderTransform>
+        <Line X1="0" Y1="0" X2="100" Y2="100" Stroke="Black" StrokeThickness="2"/>
+        <!-- 
+        <Button Canvas.Top="93" Canvas.Left="116" FontSize="15" Foreground="Red" Name="btn" Content="My Button" Height="25" Width="76" />
+        -->
+        <Button Canvas.Top="93" Canvas.Left="116" FontSize="15" Foreground="Red" Name="btn" Content="My Button" Height="25" Width="76" >
+            <Button.RenderTransform>
+                <ScaleTransform ScaleY="-1"/>
+            </Button.RenderTransform>
+        </Button>
+    </Canvas>
+</Window>

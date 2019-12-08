@@ -1,0 +1,30 @@
+﻿<Window x:Class="mumu_geometries.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl Background="White">
+            <TabItem Header="简单的Geometry类型">
+                <Frame Background="White" Source="simplegeometryexample.xaml" />
+            </TabItem>
+            <TabItem Header="GeometryGroup和CombineGeometry">
+                <Frame Background="White" Source="geometrygroupandcombinegeometryexample.xaml" />
+            </TabItem>
+            <TabItem Header="CombinedGeometry 示例">
+                <Frame Background="White" Source="combininggeometriesexample.xaml" />
+            </TabItem>
+            <TabItem Header="PathGeometry 示例">
+                <Frame Background="White" Source="pathgeometryexample.xaml" />
+            </TabItem>
+            <TabItem Header="ArcSegment 示例">
+                <Frame Background="White" Source="arcsegmentexample.xaml" />
+            </TabItem>
+            <TabItem Header="交互式贝塞尔曲线 示例">
+                <Frame Background="White" Source="BezierExample.xaml" />
+            </TabItem>
+            <TabItem Header="StreamGeometry 示例">
+                <Frame Background="White" Source="streamgeometryexample.xaml" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

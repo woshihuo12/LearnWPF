@@ -1,0 +1,29 @@
+﻿<Window x:Class="mumu_timebehaviorsample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Timeline的基本行为" SizeToContent="WidthAndHeight">
+    <DockPanel Background="White">
+        <TabControl Name="sampleSelector">
+            <TabItem Header="BeginTime 示例">
+                <Frame Source="BeginTimeExample.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="AutoReverse和RepatBehavior示例">
+                <Frame Source="RepeatBehaviorAndAutoReverseExample.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="SpeedRatio示例">
+                <Frame Source="SpeedExample.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="AccelerationRatio和DecelerationRatio示例">
+                <Frame Source="AccelDecelExample.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="IsAdditive示例">
+                <Frame Source="IsAdditiveExample.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="IsCumulative示例">
+                <Frame Source="IsCumulativeExample.xaml" Background="White" />
+            </TabItem>
+           
+        </TabControl>
+
+    </DockPanel>
+</Window>

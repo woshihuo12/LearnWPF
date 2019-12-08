@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_shareresources", "mumu_shareresources\mumu_shareresources.csproj", "{63A5B2CA-BCAD-4A5C-A65B-1982C95BD2E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E887C1C5-1C55-41E9-9C95-2D34B9D930FE} = {E887C1C5-1C55-41E9-9C95-2D34B9D930FE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_resourcesLib", "mumu_resourcesLib\mumu_resourcesLib.csproj", "{E887C1C5-1C55-41E9-9C95-2D34B9D930FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63A5B2CA-BCAD-4A5C-A65B-1982C95BD2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A5B2CA-BCAD-4A5C-A65B-1982C95BD2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A5B2CA-BCAD-4A5C-A65B-1982C95BD2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A5B2CA-BCAD-4A5C-A65B-1982C95BD2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E887C1C5-1C55-41E9-9C95-2D34B9D930FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E887C1C5-1C55-41E9-9C95-2D34B9D930FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E887C1C5-1C55-41E9-9C95-2D34B9D930FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E887C1C5-1C55-41E9-9C95-2D34B9D930FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

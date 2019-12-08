@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="mumu_winformhostwpf.UserControl1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    <Grid>
+        <Button x:Name="btn"  Content="在WinForm项目中嵌入WPF内容" Margin="15"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_propertyinheritdemo", "mumu_propertyinheritdemo\mumu_propertyinheritdemo.csproj", "{B2D7CC5A-F4F8-4491-AC26-BA396249EFED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2D7CC5A-F4F8-4491-AC26-BA396249EFED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D7CC5A-F4F8-4491-AC26-BA396249EFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D7CC5A-F4F8-4491-AC26-BA396249EFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D7CC5A-F4F8-4491-AC26-BA396249EFED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

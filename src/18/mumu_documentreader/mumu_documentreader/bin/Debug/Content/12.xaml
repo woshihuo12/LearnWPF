@@ -1,0 +1,64 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"><Paragraph FontSize="24" Background="#FFF0F8FF" Name="para"><Figure HorizontalAnchor="ColumnRight" VerticalAnchor="ParagraphTop" HorizontalOffset="-10" VerticalOffset="-30" Width="100" Height="100"><BlockUIContainer><Image Source="file:///E:/我的工作/写作/文档/src/myself/MUMUDocumentReader/Step5/mumu_documentreader/mumu_documentreader/bin/Debug/Content/bee.png" /></BlockUIContainer></Figure> 路由事件（Routed Event）</Paragraph><Section FontFamily="华文仿宋"><Paragraph>黄蓉凝目看去，只见那两只玉蜂双翅上也都有字，那六个字也是一模一样，右翅是“情谷底”，左翅是“我在绝”。黄蓉大奇，暗想：“造物虽奇，也决造不出这样一批蜜蜂来之理。其中必有缘故。” ……</Paragraph><Paragraph>黄蓉不答，只是轻轻念着：“情谷底，我在绝。情谷底，我在绝。”她念了几遍，随即省悟：“啊！那是‘我在绝情谷底’。是谁在绝情谷底啊？难道是襄儿？”心中怦怦乱跳……</Paragraph><Paragraph TextAlignment="Right">——《神雕侠侣：第三十八回 生死茫茫》</Paragraph></Section><Section LineHeight="25" FontSize="15"><Paragraph>这一段讲的是小龙女深陷绝情谷地，用花树上的细刺，在玉蜂翅上刺下‘我在绝情谷底’六字，盼望玉蜂飞上之后，能为人发现。结果蜂翅上的细字被周伯通发现，而给黄蓉隐约猜到了其中含义。本节内容包括：</Paragraph><List><ListItem><Paragraph>从玉蜂说起，回顾.Net事件模型</Paragraph></ListItem><ListItem><Paragraph>什么是路由事件？</Paragraph></ListItem><ListItem><Paragraph>CLR事件足够完美，为什么还需要路由事件？</Paragraph></ListItem><ListItem><Paragraph>言归正传，话路由事件</Paragraph></ListItem><ListItem><Paragraph>路由事件的实例</Paragraph></ListItem></List></Section><Paragraph FontSize="20" Background="#FFF0F8FF" Name="first">1. 从玉蜂说起，回顾.Net事件模型</Paragraph><Paragraph>木木熟悉神雕侠侣的故事，于是他根据“玉蜂传信”这样一个故事，信手画下这样一幅有趣的图。</Paragraph><BlockUIContainer><Image Source="file:///E:/我的工作/写作/文档/src/myself/MUMUDocumentReader/Step5/mumu_documentreader/mumu_documentreader/bin/Debug/Content/routedevent.jpg" /></BlockUIContainer><Paragraph>其实这一幅“玉蜂传信图”暗合.Net的事件模型。小龙女是事件的发布者，她发布了事件“我在绝情谷底”；老顽童和黄蓉是事件的订阅者，不过老顽童并没有处理该事件，而黄蓉处理了事件，隐约能猜出其中含义；至于可怜的小杨过，则根本没有订阅事件，只是苦苦念叨“龙儿，龙儿，你在哪儿……”；而玉蜂正是传递信息的事件。事件，事件的发布者和事件的订阅者构成了.Net事件模型的三个角色。在.Net当中，一个事件是用关键字event来表示的。如下代码所示：</Paragraph><Paragraph Background="#88888888" xml:space="preserve">
+                    public delegate void WhiteBee(string param); //声明了玉蜂的委托
+    // 小龙女类
+    class XiaoLongnv
+    {
+        public event WhiteBee WhiteBeeEvent;    //玉蜂事件
+        public void OnFlyBee()
+        {
+            Console.WriteLine("小龙女在谷底日复一日地放着玉蜂，希望杨过有一天能看到.....");
+            WhiteBeeEvent(msg);
+        }
+        private string msg = "我在绝情谷底";
+}
+
+    // 老顽童类
+    class LaoWantong
+    {
+        public void ProcessBeeLetter(string msg)
+        {
+            Console.WriteLine("老顽童：小蜜蜂、小蜜蜂，别跑");
+        }
+    }
+
+    // 黄蓉类
+    class Huangrong
+    {
+        public void ProcessBeeLetter(string msg)
+        {
+            Console.WriteLine("黄蓉：\"{0}\",莫非......",msg);
+        }
+}
+
+    // 杨过类
+    class YangGuo
+    {
+        public void ProcessBeeLetter(string msg)
+        {
+            Console.WriteLine("杨过：\"{0}\",我一定会找她！", msg);
+        }
+        public void Sign()
+        {
+            Console.WriteLine("杨过叹息：龙儿，你在哪儿....");
+        }
+}
+    static void Main(string[] args)
+    {
+       // 第一步 人物介绍
+       XiaoLongnv longnv = new XiaoLongnv();   //小龙女
+       LaoWantong wantong = new LaoWantong();  //老顽童
+       Huangrong rong = new Huangrong();       //黄蓉
+       YangGuo guo = new YangGuo();            //杨过
+
+       // 第二步 订阅事件,唯独没有订阅杨过的ProcessBeeLetter;
+       longnv.WhiteBeeEvent += wantong.ProcessBeeLetter;
+       longnv.WhiteBeeEvent += rong.ProcessBeeLetter;
+       // longnv.WhiteBeeEvent += guo.ProcessBeeLetter; //杨过是没有订阅小龙女的玉蜂事件
+
+       // 第三步 小龙女玉蜂传信
+       longnv.OnFlyBee();
+
+       // 第四步 杨过叹息
+       guo.Sign();
+    }
+</Paragraph></FlowDocument>

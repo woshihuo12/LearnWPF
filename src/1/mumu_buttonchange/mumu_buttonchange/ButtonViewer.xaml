@@ -1,0 +1,86 @@
+﻿<Page x:Class="mumu_buttonchange.ButtonViewer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Loaded="galleryLoaded" SizeChanged="pageSizeChanged">
+    
+    <Grid Background="Black">
+        <!---->
+        <Border Name="SampleGridBorder" BorderThickness="1" BorderBrush="LightGray" HorizontalAlignment="Right">
+            <Grid Name="SampleGrid"   HorizontalAlignment="Right" Width="300" Height="400"
+        Margin="10" VerticalAlignment="Top" Visibility="Visible"  RadioButton.Checked="selectedSampleChanged">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <RadioButton Grid.Column="0" Grid.Row="0" Style="{StaticResource GlassRadioButtonStyle}">
+                    <Frame  Source="Button1.xaml" Background="White" NavigationUIVisibility="Hidden"/>
+                </RadioButton>
+                 <RadioButton Grid.Column="1" Grid.Row="0" Style="{StaticResource GlassRadioButtonStyle}">
+                    <Frame  Source="Button2.xaml" Background="White" NavigationUIVisibility="Hidden"/>
+                </RadioButton>
+                <!--<RadioButton Grid.Column="2" Grid.Row="0" Style="{StaticResource GlassRadioButtonStyle}">
+                    <Frame  Source="Button3.xaml" Background="White" NavigationUIVisibility="Hidden"/>
+                </RadioButton>-->
+                
+                <RadioButton Grid.Column="3" Grid.Row="0" Style="{StaticResource GlassRadioButtonStyle}">
+                    <Frame  Source="Button4.xaml" Background="White" NavigationUIVisibility="Hidden"/>
+                </RadioButton>
+                <RadioButton Grid.Column="0" Grid.Row="1" Style="{StaticResource GlassRadioButtonStyle}">
+                    <Frame  Source="SpotLight.xaml" Background="White" NavigationUIVisibility="Hidden"/>
+                </RadioButton>
+                <RadioButton Grid.Column="1" Grid.Row="1" Style="{StaticResource GlassRadioButtonStyle}">
+                    <Frame  Source="KnifeSwitchCheckBox.xaml" Background="White" NavigationUIVisibility="Hidden"/>
+                </RadioButton>
+                <RadioButton Grid.Column="2" Grid.Row="1" Style="{StaticResource GlassRadioButtonStyle}">
+                    <Frame  Source="RadarExample.xaml" Background="White" NavigationUIVisibility="Hidden"/>
+                </RadioButton>
+    </Grid>
+            
+            <Border.RenderTransform>
+                <TranslateTransform x:Name="SampleGridTranslateTransform" X="50" Y="0" />
+            </Border.RenderTransform>
+        </Border>
+        
+        <Border Name="SampleDisplayBorder" BorderBrush="Gray" BorderThickness="1" Visibility="Collapsed" Background="Black">
+            <DockPanel Margin="10"  HorizontalAlignment="Stretch">
+                <Button DockPanel.Dock="Right" Height="50" Width="50" Click="Button_Click">
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="Button.Click">
+                            <BeginStoryboard HandoffBehavior="SnapshotAndReplace">
+                                <Storyboard>
+                                    <!--针对SampleGrid透明度从0到1-->
+                                    <DoubleAnimation Storyboard.TargetName="SampleGrid" Storyboard.TargetProperty="Opacity"
+                                        From="0" To="1" BeginTime="0:0:0" />
+                                    <!--宽度-->
+                                    <DoubleAnimation Storyboard.TargetName="SampleGridTranslateTransform"
+                                        Storyboard.TargetProperty="X"  To="0" BeginTime="0:0:0" />
+                                    <DoubleAnimation Storyboard.TargetName="SampleDisplayBorderTranslateTransform"
+                                         Storyboard.TargetProperty="X" BeginTime="0:0:0" Duration="0:0:1"   From="0"
+                                         To="{Binding ElementName=SampleDisplayBorder, Path=ActualWidth}"/>
+                                 </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+        <TabControl x:Name="tabcontrol" Style="{DynamicResource TabControlDemoStyle}" TabStripPlacement="Right" >
+            <TabItem x:Name="contentitem" Style="{DynamicResource TabItemDemoStyle}" >
+                <Frame Name="SampleDisplayFrame" Background="White" NavigationUIVisibility="Hidden" ContentRendered="sampleDisplayFrameLoaded"/>
+            </TabItem>
+            <TabItem  Header="XAML" Style="{DynamicResource TabItemDemoStyle}">
+                <RichTextBox x:Name="xamlText" />
+            </TabItem>
+        </TabControl>
+        </DockPanel>
+            <Border.RenderTransform>
+                <TranslateTransform x:Name="SampleDisplayBorderTranslateTransform" X="0" />
+            </Border.RenderTransform>
+        </Border>
+    </Grid>
+</Page>

@@ -1,0 +1,14 @@
+﻿
+   <StackPanel Background="PowderBlue" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+      <Glyphs
+         FontUri             = "C:\WINDOWS\Fonts\TIMES.TTF"
+         FontRenderingEmSize = "100"
+         StyleSimulations    = "BoldSimulation,ItalicSimulation"
+         UnicodeString       = "Hello World!"
+         Fill                = "Black"
+         OriginX             = "100"
+         OriginY             = "200"
+      />
+
+   </StackPanel>

@@ -1,0 +1,477 @@
+﻿<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    x:Class="WPFClock.DigitalClock"
+	x:Name="Window"
+	Width="400" Height="110" 
+	Opacity="1"  Visibility="Visible"    
+    SizeChanged="WinSizeChanded" >
+    <Page.ContextMenu>
+        <ContextMenu Name="cm" HasDropShadow="True">
+            <MenuItem Header="Shadow">
+                <MenuItem Header="0 point" Click="Shadow_0"/>
+                <MenuItem Header="1 point" Click="Shadow_1"/>
+                <MenuItem Header="2 point" Click="Shadow_2"/>
+                <MenuItem Header="3 point" Click="Shadow_3"/>
+                <MenuItem Header="4 point" Click="Shadow_4"/>
+                <MenuItem Header="5 point" Click="Shadow_5"/>
+            </MenuItem>
+            <MenuItem Header="Digits Color"/>
+        </ContextMenu>
+    </Page.ContextMenu>
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ClockResDict.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <Storyboard x:Key="Storyboard_1s">
+
+                <Rotation3DAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="DefaultGroup_1s" Storyboard.TargetProperty="(Visual3D.Transform).(Transform3DGroup.Children)[2].(RotateTransform3D.Rotation)">
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="270" Axis="-1.22460635382238E-16,-1,1.22460635382238E-16"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00.2000000">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="360" Axis="-1,0,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00.8000000">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="0" Axis="0,1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:01">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="90" Axis="0,-1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                </Rotation3DAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="Storyboard_10s">
+
+                <Rotation3DAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="DefaultGroup_10s" Storyboard.TargetProperty="(Visual3D.Transform).(Transform3DGroup.Children)[2].(RotateTransform3D.Rotation)">
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="270" Axis="-1.22460635382238E-16,-1,1.22460635382238E-16"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="360" Axis="-1,0,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:09.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="0" Axis="0,1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:10">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="90" Axis="0,-1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                </Rotation3DAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="Storyboard_1m">
+
+                <Rotation3DAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="DefaultGroup_1m" Storyboard.TargetProperty="(Visual3D.Transform).(Transform3DGroup.Children)[2].(RotateTransform3D.Rotation)">
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="270" Axis="-1.22460635382238E-16,-1,1.22460635382238E-16"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="360" Axis="-1,0,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:59.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="0" Axis="0,1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:10:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="90" Axis="0,-1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                </Rotation3DAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="Storyboard_10m" RepeatBehavior="Forever">
+
+                <Rotation3DAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="DefaultGroup_10m" Storyboard.TargetProperty="(Visual3D.Transform).(Transform3DGroup.Children)[2].(RotateTransform3D.Rotation)">
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="270" Axis="-1.22460635382238E-16,-1,1.22460635382238E-16"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="360" Axis="-1,0,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:09:59.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="0" Axis="0,1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="01:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="90" Axis="0,-1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                </Rotation3DAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="Storyboard_1h" RepeatBehavior="Forever">
+
+                <Rotation3DAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="DefaultGroup_1h" Storyboard.TargetProperty="(Visual3D.Transform).(Transform3DGroup.Children)[2].(RotateTransform3D.Rotation)">
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="270" Axis="-1.22460635382238E-16,-1,1.22460635382238E-16"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="360" Axis="-1,0,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:59:59.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="0" Axis="0,1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="10:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="90" Axis="0,-1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                </Rotation3DAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="Storyboard_10h" RepeatBehavior="Forever">
+
+                <Rotation3DAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="DefaultGroup_10h" Storyboard.TargetProperty="(Visual3D.Transform).(Transform3DGroup.Children)[2].(RotateTransform3D.Rotation)">
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="270" Axis="-1.22460635382238E-16,-1,1.22460635382238E-16"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="00:00:00.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="360" Axis="-1,0,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="23:59:59.5">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="0" Axis="0,1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                    <SplineRotation3DKeyFrame KeyTime="23:59:59">
+                        <SplineRotation3DKeyFrame.Value>
+                            <AxisAngleRotation3D Angle="90" Axis="0,-1,0"/>
+                        </SplineRotation3DKeyFrame.Value>
+                    </SplineRotation3DKeyFrame>
+                </Rotation3DAnimationUsingKeyFrames>
+            </Storyboard>
+        </ResourceDictionary>
+    </Page.Resources>
+
+	<Grid x:Name="ClockGrid" Height="110" Width="390" AllowDrop="True" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="1">
+        <Viewport3D Name="viewport3D1" ClipToBounds="False" RenderTransformOrigin="0.424,0.438" Margin="0,0,0,0" >
+        	<Viewport3D.BitmapEffect>
+        		<DropShadowBitmapEffect ShadowDepth="15" Softness="0.2" x:Name="DigitDropShadow" />
+        	</Viewport3D.BitmapEffect>
+            <Viewport3D.Camera>
+                <PerspectiveCamera x:Name="PCamera_clock1" FarPlaneDistance="150" FieldOfView="30" LookDirection="0,0,-2.07393971556536" NearPlaneDistance="1.3" Position="-0.2,1,4.3" UpDirection="0,1,0">
+                    <PerspectiveCamera.Transform>
+                        <Transform3DGroup>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0" />
+                            <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1" />
+                            <RotateTransform3D />
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0" />
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0" />
+                        </Transform3DGroup>
+                    </PerspectiveCamera.Transform>
+                </PerspectiveCamera>
+            </Viewport3D.Camera>
+            <ModelVisual3D x:Name="ModelVisual3D_10h">
+                <ModelVisual3D x:Name="AmbientLightContainer_10h">
+                    <ModelVisual3D.Content>
+                		<AmbientLight x:Name="AmbLight_10h" Color="LightBlue">
+                			<AmbientLight.Transform>
+                				<Transform3DGroup>
+                					<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                					<ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                					<RotateTransform3D d:EulerAngles="0,0,0"/>
+                					<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                					<TranslateTransform3D OffsetX="-0.203" OffsetY="0" OffsetZ="0"/>
+                				</Transform3DGroup>
+                			</AmbientLight.Transform>
+                		</AmbientLight>
+                	</ModelVisual3D.Content>
+                </ModelVisual3D>
+                <ModelVisual3D x:Name="DirectionalLightContainer_10h">
+                	<ModelVisual3D.Transform>
+                		<Transform3DGroup>
+                			<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                			<ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                			<RotateTransform3D d:EulerAngles="0,0,0"/>
+                			<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                			<TranslateTransform3D OffsetX="-0.216" OffsetY="0" OffsetZ="0"/>
+                		</Transform3DGroup>
+                	</ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <DirectionalLight x:Name="DirectionalLight_10h" Color="{DynamicResource DirLight-1}">
+                        	<DirectionalLight.Transform>
+                        		<Transform3DGroup>
+                        			<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                        			<ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                        			<RotateTransform3D d:EulerAngles="0,0,0"/>
+                        			<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                        			<TranslateTransform3D OffsetX="-0.152" OffsetY="2.622" OffsetZ="0"/>
+                        		</Transform3DGroup>
+                        	</DirectionalLight.Transform>
+                        </DirectionalLight>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+                <ModelVisual3D x:Name="DefaultGroup_10h">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+                            <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="-1.168" OffsetY="0.715" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_10h" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Digit_0}" Changed="GeometryModel3D_10hChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+                        </GeometryModel3D>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+            </ModelVisual3D>
+			<ModelVisual3D x:Name="ModelVisual3D_1h">
+				<ModelVisual3D x:Name="DefaultGroup_1h">
+					<ModelVisual3D.Transform>
+						<Transform3DGroup>
+							<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+							<ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+							<RotateTransform3D d:EulerAngles="0,0,0"/>
+							<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+							<TranslateTransform3D OffsetX="-0.824" OffsetY="0.716" OffsetZ="0"/>
+						</Transform3DGroup>
+					</ModelVisual3D.Transform>
+					<ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_1h" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Digit_0}" Changed="GeometryModel3D_1hChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+						</GeometryModel3D>
+					</ModelVisual3D.Content>
+				</ModelVisual3D>
+			</ModelVisual3D>
+            <ModelVisual3D x:Name="ModelVisual3D_10m">
+                <ModelVisual3D x:Name="DefaultGroup_10m">
+                    <ModelVisual3D.Transform>
+                    	<Transform3DGroup>
+                    		<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                    		<ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+                    		<RotateTransform3D d:EulerAngles="0,0,0"/>
+                    		<TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                    		<TranslateTransform3D OffsetX="-0.378" OffsetY="0.716" OffsetZ="0"/>
+                    	</Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_10m" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Digit_0}" Changed="GeometryModel3D_10mChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+						</GeometryModel3D>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+            </ModelVisual3D>
+            <ModelVisual3D x:Name="ModelVisual3D_1m">
+                <ModelVisual3D x:Name="DefaultGroup_1m">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+                            <RotateTransform3D d:EulerAngles="0,0,0"/>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <TranslateTransform3D OffsetX="-0.038" OffsetY="0.716" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_1m" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Digit_0}" Changed="GeometryModel3D_1mChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+						</GeometryModel3D>
+						</ModelVisual3D.Content>
+                </ModelVisual3D>
+            </ModelVisual3D>
+            <ModelVisual3D x:Name="ModelVisual3D_10s">
+                <ModelVisual3D x:Name="DefaultGroup_10s">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+                            <RotateTransform3D d:EulerAngles="0,0,0"/>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <TranslateTransform3D OffsetX="0.412" OffsetY="0.718" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_10s" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Digit_0}" Changed="GeometryModel3D_10sChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+						</GeometryModel3D>
+						</ModelVisual3D.Content>
+                </ModelVisual3D>
+            </ModelVisual3D>
+            <ModelVisual3D x:Name="ModelVisual3D_1s">
+                <ModelVisual3D x:Name="DefaultGroup_1s">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+                            <RotateTransform3D d:EulerAngles="0,0,0"/>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <TranslateTransform3D OffsetX="0.754" OffsetY="0.718" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_1s" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Digit_0}" Changed="GeometryModel3D_1sChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+						</GeometryModel3D>
+					</ModelVisual3D.Content>
+                </ModelVisual3D>
+            </ModelVisual3D>
+            <ModelVisual3D x:Name="ModelVisual3D_div1">
+                <ModelVisual3D x:Name="DefaultGroup_div1">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+                            <RotateTransform3D d:EulerAngles="0,0,0"/>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <TranslateTransform3D OffsetX="0.184" OffsetY="0.79" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_div1" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Char_div}" Changed="GeometryModel3D_10sChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+                        </GeometryModel3D>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+            </ModelVisual3D>
+            <ModelVisual3D x:Name="ModelVisual3D_div2">
+                <ModelVisual3D x:Name="DefaultGroup_div2">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <ScaleTransform3D ScaleX="0.5" ScaleY="0.5" ScaleZ="0.5"/>
+                            <RotateTransform3D d:EulerAngles="0,0,0"/>
+                            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                            <TranslateTransform3D OffsetX="-0.586" OffsetY="0.79" OffsetZ="0"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <ModelVisual3D.Content>
+                        <GeometryModel3D x:Name="GeometryModel3DGeometry_div2" d:Bounds="0,0,0,0,0,0" Geometry="{DynamicResource Char_div}" Changed="GeometryModel3D_10sChanged">
+                            <GeometryModel3D.Transform>
+                                <Transform3DGroup>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <ScaleTransform3D ScaleX="1" ScaleY="1" ScaleZ="1"/>
+                                    <RotateTransform3D d:EulerAngles="0,0,0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                    <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0"/>
+                                </Transform3DGroup>
+                            </GeometryModel3D.Transform>
+                            <GeometryModel3D.Material>
+                                <DiffuseMaterial Brush="{DynamicResource Brush-s}"/>
+                            </GeometryModel3D.Material>
+                        </GeometryModel3D>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+            </ModelVisual3D>
+
+        </Viewport3D>
+        <Grid.RenderTransform>
+            <ScaleTransform x:Name="scale" />
+        </Grid.RenderTransform>
+    </Grid>
+</Page>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="mumu_layout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="第一片桃林仿真by木木">
+                <Frame Source="Page1.xaml"/>
+            </TabItem>
+            <TabItem Header="第二片桃林仿真by木木">
+                <Frame Source="Page2.xaml"/>
+            </TabItem>
+            <TabItem Header="第三片桃林仿真by木木">
+                <Frame Source="Page3.xaml"/>
+            </TabItem>
+            <TabItem Header="第四片桃林仿真by木木">
+                <Frame Source="Page4.xaml"/>
+            </TabItem>
+            <TabItem Header="第四片桃树林by木木DockPanel模拟StackPanel">
+                <Frame Source="Page5.xaml"/>
+            </TabItem>
+            <TabItem Header="星号尺寸Demoby老顽童">
+                <Frame Source="Page6.xaml"/>
+            </TabItem>
+            <TabItem Header="共享尺寸Demoby老顽童">
+                <Frame Source="Page7.xaml"/>
+            </TabItem>
+            <TabItem Header="GridSplitterDemoby老顽童">
+                <Frame Source="Page8.xaml"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

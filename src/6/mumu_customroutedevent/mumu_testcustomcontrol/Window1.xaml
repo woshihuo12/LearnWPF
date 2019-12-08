@@ -1,0 +1,21 @@
+﻿<Window x:Class="mumu_testcustomcontrol.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:custom ="clr-namespace:mumu_testcustomcontrol"
+    Title="Window1" Name="window1" Height="300" Width="300" custom:MySimpleButton.CustomClick="InsertList" Loaded="Window_Loaded">
+    <Grid Margin="3" custom:MySimpleButton.CustomClick="InsertList">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <custom:MySimpleButton x:Name ="simpleBtn" CustomClick="InsertList">
+            MySimpleButton
+        </custom:MySimpleButton>
+        <ListBox Margin="5" Name="lstMessages" Grid.Row="1"></ListBox>
+        <CheckBox Margin="5" Grid.Row="2" Name="chkHandle">Handle first event</CheckBox>
+        <Button  Grid.Row="3" HorizontalAlignment="Right" Margin="5" Padding="3" Click="cmdClear_Click">Clear List</Button>
+    </Grid>
+
+</Window>

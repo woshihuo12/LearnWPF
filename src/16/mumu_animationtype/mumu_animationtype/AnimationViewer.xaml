@@ -1,0 +1,28 @@
+﻿<Window x:Class="mumu_animationtype.AnimationViewer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" WindowState ="Maximized">
+    <DockPanel Background="White" >
+        <TabControl Name="sampleSelector">
+            <TabItem Header="FromToBy示例">
+                <Frame Source="FromToBy.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="简单的KeyFrame动画示例">
+                <Frame Source="SimpleKeyFrameAnimation.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="SplineKeyFrame动画示例">
+                <Frame Source="SplineExample.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="简单的Path动画示例">
+                <Frame Source="SimplePathAnimation.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="角度也沿轨迹运动的动画示例">
+                <Frame Source="rotateanimationusingpathexample.xaml" Background="White" />
+            </TabItem>
+            <TabItem Header="交互控制动画">
+                <Frame Source="intercative control animate.xaml" Background="White" />
+            </TabItem>            
+        </TabControl>
+
+    </DockPanel>
+</Window>

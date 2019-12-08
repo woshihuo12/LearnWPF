@@ -1,0 +1,18 @@
+﻿<Page x:Class="mumu_dataretainandtransfer.WelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Welcome Page" WindowTitle="欢迎页面">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="welcome" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock  Grid.Row="1" HorizontalAlignment="Right">
+            点击此处
+            <Hyperlink NavigateUri="LoginPage.xaml">
+                退出
+                </Hyperlink>
+        </TextBlock>
+    </Grid>
+</Page>

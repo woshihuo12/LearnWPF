@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="mumu_webcam">
+</Property><Property Name="Solution File" Value="D:\code\VS2010RC\19\mumu_webcam\mumu_webcam\mumu_webcam.sln">
+</Property><Property Name="Date" Value="2010年7月12日">
+</Property><Property Name="Time" Value="21:24:37">
+</Property></Properties><Event ErrorLevel="0" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Converting project file 'D:\code\VS2010RC\19\mumu_webcam\mumu_webcam\mumu_webcam.vcproj'.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Done converting to new project file 'D:\code\VS2010RC\19\mumu_webcam\mumu_webcam\mumu_webcam.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="mumu_webcam" Source="mumu_webcam.vcproj" Description="Converted">
+</Event></UpgradeLog>

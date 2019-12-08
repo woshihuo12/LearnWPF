@@ -1,0 +1,95 @@
+<Page 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  Title="SolidColorBrush Syntax">
+  <Page.Resources>
+    <Style TargetType="{x:Type Rectangle}">
+      
+      <!-- Gives all the rectangles in this panel a white stroke. -->
+      <Setter Property="Stroke" Value="White"/>
+      <Setter Property="StrokeThickness" Value="1"/>
+    </Style>
+  </Page.Resources>
+
+  <DockPanel Margin="10" Background="White">
+
+    <!-- Header -->
+    <Border Background="#FFCCCCFF" DockPanel.Dock="Top">
+    <TextBlock xml:space="preserve" Style="{StaticResource MyIntroTextBlockStyle}" Width="400">
+          下面的矩形填充例子是有若干种语法来设置SolidColorBrush:
+          （1）十六进制的语法 Fill="#0000FF"；
+          （2）用画刷的名字 Fill="Blue"； 
+          （3）指定ARGB或者ScRGB值。 
+      </TextBlock>
+    </Border>
+
+    <!-- Footer -->
+    <Rectangle Style="{StaticResource footerRectangleStyle}" 
+      Fill="#FFCCCCFF"
+      DockPanel.Dock="Bottom"/>   
+    
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,20,0,20">
+
+      <!--
+        属性语法的例子
+       -->
+     
+      <Rectangle Width="50" Height="50" Fill="Blue" />
+
+      <!--十六进制语法的例子-->
+      <Rectangle Width="50" Height="50" Fill="#00F" />
+
+      <!-- 十六进制语法的例子 -->
+      <Rectangle Width="50" Height="50" Fill="#0000FF" />
+
+      <!-- 十六进制语法的例子 -->
+      <Rectangle Width="50" Height="50" Fill="#FF0000FF" />
+
+      <!--
+          元素语法
+       -->
+      <Rectangle Width="50" Height="50">
+        <Rectangle.Fill>
+          <SolidColorBrush Color="Blue" />
+        </Rectangle.Fill>
+      </Rectangle>
+
+      <Rectangle Width="50" Height="50">
+        <Rectangle.Fill>
+          <SolidColorBrush Color="#00F" />
+        </Rectangle.Fill>
+      </Rectangle>
+
+      <Rectangle Width="50" Height="50">
+        <Rectangle.Fill>
+          <SolidColorBrush Color="#0000FF" />
+        </Rectangle.Fill>
+      </Rectangle>
+
+      <Rectangle Width="50" Height="50">
+        <Rectangle.Fill>
+          <SolidColorBrush Color="#FF0000FF" />
+        </Rectangle.Fill>
+      </Rectangle>
+
+      <Rectangle Width="50" Height="50">
+        <Rectangle.Fill>
+          <SolidColorBrush>
+            <SolidColorBrush.Color>
+              <Color ScA="1.0" ScR="0.0" ScG="0.0" ScB="1.0" />
+            </SolidColorBrush.Color>
+          </SolidColorBrush>
+        </Rectangle.Fill>
+      </Rectangle>
+      <Rectangle Width="50" Height="50">
+        <Rectangle.Fill>
+          <SolidColorBrush>
+            <SolidColorBrush.Color>
+              <Color A="255" R="0" G="0" B="255" />
+            </SolidColorBrush.Color>
+          </SolidColorBrush>
+        </Rectangle.Fill>
+      </Rectangle>
+    </StackPanel>
+  </DockPanel>
+</Page>

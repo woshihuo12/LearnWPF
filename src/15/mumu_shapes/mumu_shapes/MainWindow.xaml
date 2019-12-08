@@ -1,0 +1,36 @@
+﻿<Window x:Class="mumu_shapes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Shape 示例" SizeToContent="WidthAndHeight">
+    <Grid>
+        <TabControl Background="White">
+            <TabItem Header="矩形">
+                <Frame Background="White" Source="rectangleexample.xaml" />
+            </TabItem>
+            <TabItem Header="椭圆">
+                <Frame Background="White" Source="ellipseexample.xaml" />
+            </TabItem>
+            <TabItem Header="直线">
+                <Frame Background="White" Source="lineexample.xaml" />
+            </TabItem>
+            <TabItem Header="多边形">
+                <Frame Background="White" Source="polylineexample.xaml" />
+            </TabItem>
+            <TabItem Header="线帽和线的连接">
+                <Frame Background="White" Source="linecapsandjoinsexample.xaml" />
+            </TabItem>
+            <TabItem Header="线的连接属性">
+                <Frame Background="White" Source="miterlimitexample.xaml" />
+            </TabItem>
+            <TabItem Header="填充规则">
+                <Frame Background="White" Source="fillruleexample.xaml" />
+            </TabItem>
+            <TabItem Header="填充模式">
+                <Frame Background="White" Source="fillmodesexample.xaml" />
+            </TabItem>
+            <TabItem Header="路径">
+                <Frame Background="White" Source="pathexample.xaml" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

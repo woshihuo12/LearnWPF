@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_dataretainandtransfer", "mumu_dataretainandtransfer\mumu_dataretainandtransfer.csproj", "{6766AFD9-5938-41EE-9A9E-237910E66170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6766AFD9-5938-41EE-9A9E-237910E66170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6766AFD9-5938-41EE-9A9E-237910E66170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6766AFD9-5938-41EE-9A9E-237910E66170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6766AFD9-5938-41EE-9A9E-237910E66170}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

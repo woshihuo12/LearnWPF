@@ -1,0 +1,46 @@
+﻿<Page x:Class="mumu_simplebuttonsbyxaml.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="样式" >
+    <Page.Resources>
+        <!--基类样式-->
+        <Style  TargetType="{x:Type Control}">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="35,0,0,0"/>
+            <Setter Property="Background" Value="Beige"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <RotateTransform Angle="45"/>
+                </Setter.Value>
+            </Setter>
+            
+        </Style>
+        <!--从基类样式派生下来的Button样式-->
+        <Style BasedOn="{StaticResource {x:Type Control}}"
+            TargetType="{x:Type Button}">
+            <Setter Property="Foreground" Value="Blue"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="BlanchedAlmond">
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <!--从基类样式派生下来的RadioButton样式-->
+        <Style BasedOn="{StaticResource {x:Type Control}}"
+            TargetType="{x:Type RadioButton}">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Foreground" Value="Red"/>
+            
+        </Style>
+    </Page.Resources>
+    <WrapPanel x:Name="wrappanel" Margin="20">
+        <WrapPanel.RenderTransform>
+            <ScaleTransform ScaleX="3" ScaleY="3"/>
+        </WrapPanel.RenderTransform>
+        <Button  Content="Button1" />
+        <Button  Content="Button2"  />
+        <Button  Content="Button3"  />
+        <RadioButton Content="RadioButton1"/>
+    </WrapPanel>
+</Page>

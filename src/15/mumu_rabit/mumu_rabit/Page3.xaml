@@ -1,0 +1,55 @@
+﻿<Page x:Class="mumu_rabit.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page3">
+    <Page.Resources>
+        <SolidColorBrush x:Key="graybrush" Color="#FFC4C4C4"/>
+    </Page.Resources>
+    <Grid>
+        <Image  Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image.Source>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource graybrush}">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry Figures="M225,131 L215.5,85.5 220.5,77.5 232.5,72.5 245.5,70.5 253.5,77.5 252.5,84.5 251.5,96.5 250.5,111.5 255.5,120.5 z
+              M315.5,123.5 L312.5,105.5 318.5,88.5 324.5,80.5 332.5,80.5 342.5,81.5 350.5,87.5 356.5,97.5 353.5,105.5 346.5,115.5 341.5,124.5 338.5,130.5 z
+              M209,140 L205.5,163.5 206.5,178.5 209.5,203.5 215.5,223.5 223.5,242.5 230.5,253.5 244.5,256.5 254.5,259.5 310.5,259.5 334.5,253.5 347.5,224.5 353.5,206.5 357.5,182.5 357.5,150.5 357.5,139.5 335.5,128.5 307.5,123.5 277.5,122.5 256.5,121.5 239.5,124.5 z"/>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="White">
+                                <GeometryDrawing.Geometry>
+                                    <PathGeometry Figures="M279,179 L278.5,149.5 C278.5,149.5 272.5,140.5 269.5,140.5 266.5,140.5 256.5,136.5 256.5,136.5 L244.5,137.5 233.5,140.5 227.5,148.5 222.5,159.5 221.5,171.5 226.5,183.5 235.5,190.5 248.5,196.5 259.5,195.5 269.5,187.5 z
+              M281,180 L278.5,148.5 286.5,141.5 296.5,136.5 313.5,137.5 323.5,140.5 333.5,147.5 337.5,160.5 336.5,174.5 331.5,183.5 320.5,191.5 310.5,196.5 292.5,191.5 z"/>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="Black" >
+                                <GeometryDrawing.Pen>
+                                    <Pen Thickness="1" Brush="Black" />
+                                </GeometryDrawing.Pen>
+                                <GeometryDrawing.Geometry >
+                                    <GeometryGroup>
+                                        <EllipseGeometry Center="249,162" RadiusX="3" RadiusY="3"/>
+                                        <EllipseGeometry Center="305,166" RadiusX="3" RadiusY="3"/>
+                                        <LineGeometry StartPoint="267,246" EndPoint="290.5,245.5" />
+                                    </GeometryGroup>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                           
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Image.Source>
+        </Image>
+        <TextBlock Height="27"  Width="198" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="20,0,0,30">
+            使用Drawing画成的兔子
+            <LineBreak/>
+                使用了3个GeometryDrawing
+        </TextBlock>
+        <TextBlock Margin="61,0,83,12" TextWrapping="Wrap" Height="27" Canvas.Left="98.5" Canvas.Top="254" VerticalAlignment="Bottom">
+    <LineBreak />
+    点<Hyperlink NavigateUri="Page4.xaml">这儿</Hyperlink>到下一个兔子
+        </TextBlock>
+    </Grid>
+</Page>

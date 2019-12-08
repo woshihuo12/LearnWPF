@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_button03", "mumu_button03\mumu_button03.csproj", "{A2DDBEFF-C3BA-4028-9F34-509C7F33EDC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2DDBEFF-C3BA-4028-9F34-509C7F33EDC4}.Debug|x86.ActiveCfg = Debug|x86
+		{A2DDBEFF-C3BA-4028-9F34-509C7F33EDC4}.Debug|x86.Build.0 = Debug|x86
+		{A2DDBEFF-C3BA-4028-9F34-509C7F33EDC4}.Release|x86.ActiveCfg = Release|x86
+		{A2DDBEFF-C3BA-4028-9F34-509C7F33EDC4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

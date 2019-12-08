@@ -1,0 +1,20 @@
+﻿<Window x:Class="mumu_dumpCLRNamespace.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="查看CLR命名空间" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition  Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listbox" Grid.ColumnSpan="2"/>
+        
+        <Button Grid.Row="1" Content="打开一个程序集" HorizontalAlignment="Center" Click="Button_Click"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="清空列表" HorizontalAlignment="Center" Click="Button_Click_1"/>
+        
+    </Grid>
+</Window>

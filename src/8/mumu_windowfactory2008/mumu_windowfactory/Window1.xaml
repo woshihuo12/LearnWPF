@@ -1,0 +1,125 @@
+﻿<Window x:Class="mumu_windowfactory.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />  
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="1">
+            <TextBlock FontWeight="DemiBold" Text="窗口工厂" FontSize="20" />
+            <TextBlock Text="通过设置窗口的各种属性来实现创建不同的窗口" FontSize="12" Margin="10,5,0,0" />
+        </StackPanel>
+        <Button Grid.Column="1"  Content="创建窗口" Click="Button_Click"  HorizontalAlignment="Right"/>
+        <!--窗口位置相关属性-->
+        <Border  Grid.Row="1" Grid.Column="0" BorderThickness="2" BorderBrush="Black" Margin="5" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock  Text="位置和尺寸" FontSize="15"  HorizontalAlignment="Center" Foreground="Blue" Margin="5" Grid.Row="0" Grid.ColumnSpan="2"/>
+                <CheckBox Grid.Column="0" Grid.Row="1" Name="startuplocationCheckBox" >设置WindowStartupLocation属性</CheckBox>
+                <ComboBox Grid.Column="1" Grid.Row="1" Name="startuplocationCombo" IsEnabled="{Binding ElementName=startuplocationCheckBox,Path=IsChecked}">
+                    <ComboBoxItem IsSelected="True">Manual</ComboBoxItem>
+                    <ComboBoxItem>CenterScreen</ComboBoxItem>
+                    <ComboBoxItem>CenterOwner</ComboBoxItem>
+                </ComboBox>
+                <CheckBox Grid.Column="0" Grid.Row="2" Name="setWSCB" Content="设置WindowState属性" ></CheckBox>
+                <ComboBox Grid.Column="1" Grid.Row="2" Name="wsLB" IsEnabled="{Binding ElementName=setWSCB,Path=IsChecked}">
+                    <ComboBoxItem IsSelected="True">Minimized</ComboBoxItem>
+                    <ComboBoxItem>Maximized</ComboBoxItem>
+                    <ComboBoxItem>Normal</ComboBoxItem>
+                </ComboBox>
+                
+                <CheckBox Grid.Column="0" Grid.Row="3" Name="setMinWidthCB" Content="设置MinWidth属性" ></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="3"  Name="minWidthTB" IsEnabled="{Binding ElementName=setMinWidthCB,Path=IsChecked}">500</TextBox>
+                <CheckBox Grid.Column="0" Grid.Row="4" Name="setMinHeightCB" Content="设置MinHeight属性"></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="4" Name="minHeightTB" IsEnabled="{Binding ElementName=setMinHeightCB,Path=IsChecked}">500</TextBox>
+
+                <CheckBox Grid.Column="0" Grid.Row="5" Name="setSTCCB" Content="设置SizeToContent属性"></CheckBox>
+                <ComboBox Grid.Column="1" Grid.Row="5" Name="stcLB" IsEnabled="{Binding ElementName=setSTCCB,Path=IsChecked}">
+                    <ComboBoxItem IsSelected="True">Manual</ComboBoxItem>
+                    <ComboBoxItem>Width</ComboBoxItem>
+                    <ComboBoxItem>Height</ComboBoxItem>
+                    <ComboBoxItem>WidthAndHeight</ComboBoxItem>
+                </ComboBox>
+
+                <CheckBox Grid.Column="0" Grid.Row="6" Name="setMaxWidthCB" Content="设置MaxWidth属性"></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="6" Name="maxWidthTB" IsEnabled="{Binding ElementName=setMaxWidthCB,Path=IsChecked}">800</TextBox>
+
+                <CheckBox Grid.Column="0" Grid.Row="7" Name="setMaxHeightCB" Content="设置MaxHeight属性"></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="7" Name="maxHeightTB" IsEnabled="{Binding ElementName=setMaxHeightCB,Path=IsChecked}">800</TextBox>
+
+                <CheckBox Grid.Column="0" Grid.Row="8" Name="setWidthCB" Content="设置Width属性"></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="8" Name="widthTB" IsEnabled="{Binding ElementName=setWidthCB,Path=IsChecked}">700</TextBox>
+
+                <CheckBox Grid.Column="0" Grid.Row="9" Name="setHeightCB" Content="设置Height属性"></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="9" Name="heightTB" IsEnabled="{Binding ElementName=setHeightCB,Path=IsChecked}">700</TextBox>
+            </Grid>
+           
+        </Border>
+        <!--窗口外观相关属性-->
+        <Border  Grid.Row="1" Grid.Column="1" BorderThickness="2" BorderBrush="Black" Margin="5" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  Text="外观和样式" FontSize="15"  HorizontalAlignment="Center" Foreground="Blue" Margin="5" Grid.Row="0" Grid.ColumnSpan="2"/>
+                <CheckBox Grid.Column="0" Grid.Row="1" Name="resizeModeCheckBox" >设置ResizeMode属性</CheckBox>
+                <ComboBox Grid.Column="1" Grid.Row="1" Name="resizeModeCombo" IsEnabled="{Binding ElementName=resizeModeCheckBox,Path=IsChecked}">
+                <ComboBoxItem IsSelected="True">NoResize</ComboBoxItem>
+                    <ComboBoxItem>CanMinimize</ComboBoxItem>
+                    <ComboBoxItem>CanResize</ComboBoxItem>
+                    <ComboBoxItem>CanResizeWithGrip</ComboBoxItem>
+                </ComboBox>
+                <CheckBox Grid.Column="0" Grid.Row="2" Name="windowStyleCheckBox" >设置windowstyle属性</CheckBox>
+                <ComboBox Grid.Column="1" Grid.Row="2" Name="windowStyleCombo" IsEnabled="{Binding ElementName=windowStyleCheckBox,Path=IsChecked}">
+                    <ComboBoxItem IsSelected="True">SingleBorderWindow</ComboBoxItem>
+                    <ComboBoxItem>None</ComboBoxItem>
+                    <ComboBoxItem>ThreeDBorderWindow</ComboBoxItem>
+                    <ComboBoxItem>ToolWindow</ComboBoxItem>
+                </ComboBox>
+
+                <CheckBox Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" x:Name="IsShowInTaskBar">窗口是否在任务栏里显示(ShowInTaskbar)
+                </CheckBox>
+                <CheckBox Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" x:Name="IsTopmost">窗口是否置顶(Topmost)
+                </CheckBox>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

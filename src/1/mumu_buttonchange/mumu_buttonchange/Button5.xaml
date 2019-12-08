@@ -1,0 +1,165 @@
+﻿<Page x:Class="mumu_buttonchange.Button5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Button5">
+    <Grid>
+        <Canvas x:Name="lens" Width="179" Height="353">
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="Canvas.MouseLeftButtonDown">
+                    <BeginStoryboard>
+                        <Storyboard >
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.8"/>
+                                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Canvas.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard >
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="large" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:00.2000000" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="small" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:00.2000000" Value="0.75"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="small" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:00.2000000" Value="0.75"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lens_normal" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:00.2000000" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lens_normal" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:00.2000000" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="large1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:00.2000000" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Canvas.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard >
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="large" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                                <SplineDoubleKeyFrame KeySpline="0.3,0,0.3,1" KeyTime="00:00:00.7000000" Value="45"/>
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:01.1000000" Value="20"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="small" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                <SplineDoubleKeyFrame KeySpline="0.3,0,0.3,1" KeyTime="00:00:00.7000000" Value="1"/>
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:01.1000000" Value="0.9"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="small" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                <SplineDoubleKeyFrame KeySpline="0.3,0,0.3,1" KeyTime="00:00:00.7000000" Value="1"/>
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:01.1000000" Value="0.9"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lens_normal" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                <SplineDoubleKeyFrame KeySpline="0.3,0,0.3,1" KeyTime="00:00:00.7000000" Value="0.95"/>
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:01.1000000" Value="0.97"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lens_normal" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                <SplineDoubleKeyFrame KeySpline="0.3,0,0.3,1" KeyTime="00:00:00.7000000" Value="0.95"/>
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:01.1000000" Value="0.97"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="large1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                                <SplineDoubleKeyFrame KeySpline="0.3,0,0.3,1" KeyTime="00:00:00.7000000" Value="45"/>
+                                <SplineDoubleKeyFrame KeySpline="0.5,0,0.5,1" KeyTime="00:00:01.1000000" Value="20"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Canvas.Triggers>
+            <Canvas.Style>
+                <Style>
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="Canvas.MouseLeftButtonDown">
+                            <EventTrigger.Actions>
+                                <SoundPlayerAction Source="test.wav"></SoundPlayerAction>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Canvas.Style>
+            <Canvas x:Name="lens_normal" Width="179" Height="353" RenderTransformOrigin="0.486,0.249">
+                <Canvas.OpacityMask>
+                    <LinearGradientBrush EndPoint="89.5,353" StartPoint="89.5,0" MappingMode="Absolute">
+                        <GradientStop Color="#FF000000" Offset="0.495"/>
+                        <GradientStop Color="#00FFFFFF" Offset="0.784"/>
+                        <GradientStop Color="#3F4D4D4D" Offset="0.505"/>
+                    </LinearGradientBrush>
+                </Canvas.OpacityMask>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Canvas Width="179" Height="179" RenderTransformOrigin="0.5,0.5" x:Name="canvas">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            <SkewTransform AngleX="0" AngleY="0"/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform X="0" Y="0"/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Image Width="179" Height="179" Source="lens.PNG" Stretch="Fill" RenderTransformOrigin="0.5,0.5" x:Name="large">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                <SkewTransform AngleX="0" AngleY="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform X="0" Y="0"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image Width="50" Height="50" Source="lens_small.PNG" Stretch="Fill" RenderTransformOrigin="0.5,0.5" x:Name="small" Canvas.Left="64" Canvas.Top="64">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform AngleX="0" AngleY="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform X="0" Y="0"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Ellipse Opacity="0" x:Name="ellipse" Width="22.936" Height="22.936" Fill="#FF9F9F9F" Canvas.Left="77.613" Canvas.Top="77.429"/>
+                </Canvas>
+                <Canvas Width="179" Height="179" RenderTransformOrigin="0.5,0.5" Canvas.Top="179" IsHitTestVisible="False">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1" ScaleY="-1"/>
+                            <SkewTransform AngleX="0" AngleY="0"/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform X="0" Y="0"/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Image Width="179" Height="179" Source="lens.PNG" Stretch="Fill" RenderTransformOrigin="0.5,0.5" x:Name="large1">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                <SkewTransform AngleX="0" AngleY="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform X="0" Y="0"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image Width="50" Height="50" Source="lens_small.PNG" Stretch="Fill" RenderTransformOrigin="0.5,0.5" x:Name="small1" Canvas.Left="64" Canvas.Top="64">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.75" ScaleY="0.75"/>
+                                <SkewTransform AngleX="0" AngleY="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform X="0" Y="0"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Ellipse Opacity="0" x:Name="ellipse1" Width="22.936" Height="22.936" Fill="#FF9F9F9F" Canvas.Left="77.613" Canvas.Top="77.429"/>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Grid>
+</Page>

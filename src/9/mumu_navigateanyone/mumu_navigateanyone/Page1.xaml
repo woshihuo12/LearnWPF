@@ -1,0 +1,50 @@
+﻿<Page x:Class="mumu_navigateanyone.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page1">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+       
+        <StackPanel >
+
+            <TextBlock>
+            导航到
+            <Hyperlink x:Name="link1" Click="Hyperlink_Click">
+            Page2.xaml
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock>
+             导航到
+            <Hyperlink x:Name="link2" Click="Hyperlink_Click">
+           Page2.xaml
+            </Hyperlink>
+                (且调用带有参数的构造函数)
+            </TextBlock>
+
+            <TextBlock>
+             导航到一个松散XAML文件
+            <Hyperlink  x:Name="link3" Click="Hyperlink_Click">LooseXaml.xaml
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock>
+             导航到
+            <Hyperlink x:Name="link4" Click="Hyperlink_Click">
+           普通.Net对象
+            </Hyperlink>
+            </TextBlock>
+            <TextBlock>
+             导航到网页
+            <!--<Hyperlink NavigateUri="http://www.cnblogs.com/helloj2ee/">-->
+                <Hyperlink x:Name="link5" Click="Hyperlink_Click">
+           http://www.cnblogs.com/helloj2ee/
+            </Hyperlink>
+            </TextBlock>
+
+        </StackPanel>
+    </Grid>
+</Page>

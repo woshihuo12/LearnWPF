@@ -1,0 +1,45 @@
+﻿
+<Page 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowTitle="椭圆 示例">
+<StackPanel>    
+<Border>
+  <Border.Background>
+    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="#CCCCFF" Offset="0" />
+        <GradientStop Color="AliceBlue" Offset="0.25" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+  </Border.Background>
+  <TextBlock Margin="10" HorizontalAlignment="Left"> 
+   椭圆 示例
+  </TextBlock>
+</Border>  
+
+<StackPanel Margin="10">
+<Border>
+  <Canvas Height="200" Width="130">
+    <Ellipse
+      Width="100"
+      Height="50"
+      Fill="Blue"
+      Canvas.Left="10"
+      Canvas.Top="25" />
+
+    <Ellipse
+      Width="100"
+      Height="100"
+      Fill="Blue"
+      Stroke="Black"
+      StrokeThickness="4"
+      Canvas.Left="10"
+      Canvas.Top="81"/>
+
+
+  </Canvas>
+</Border>
+</StackPanel>
+</StackPanel>
+</Page>

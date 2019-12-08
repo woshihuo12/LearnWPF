@@ -1,0 +1,10 @@
+﻿<Page x:Class="mumu_textelementdemo.FontFamilyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FontFamilyPage">
+    <StackPanel>
+        <TextBlock  FontFamily="Font\#Lindsey" FontSize="30">
+            Hello Text!(FontFamily Lindsey)
+        </TextBlock>
+    </StackPanel>
+</Page>

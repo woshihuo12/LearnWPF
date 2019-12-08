@@ -1,0 +1,19 @@
+﻿<Window x:Class="mumu_userselectskin.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="换肤程序" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" VerticalAlignment="Top">
+            <MenuItem Header="皮肤" >
+                <MenuItem Header="简单按钮风格" Name="simpleSkin" Click="MenuItem_Click" IsChecked="True"></MenuItem>
+                <MenuItem Header="个性化按钮风格" Name="fancySkin" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+            
+        </Menu>
+        <Button Grid.Row="1" Content="OK" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

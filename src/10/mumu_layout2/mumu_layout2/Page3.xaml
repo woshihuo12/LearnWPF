@@ -1,0 +1,36 @@
+﻿<Page x:Class="mumu_layout2.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      
+	Title="桃树林的属性by黄药师" >
+    <Border Background="LightBlue" 
+          BorderBrush="Black" 
+          BorderThickness="2" 
+          CornerRadius="45" 
+          Padding="25">
+        <StackPanel Name="StackPanel1" Background = "White">
+            <TextBlock FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,15" Text = "StackPanel1">
+            </TextBlock>
+            <Border BorderThickness  = "1" BorderBrush = "black" >
+                <Button   Content="LayoutTransform">
+                    <Button.LayoutTransform>
+                        <RotateTransform Angle = "15" />
+                    </Button.LayoutTransform>
+                </Button>
+            </Border>
+            <Border BorderThickness  = "1" BorderBrush = "black" >
+                <Button  Content="RenderTransform" >
+                    <Button.RenderTransform>
+                        <RotateTransform Angle = "15" />
+                    </Button.RenderTransform>
+                </Button>
+            </Border>
+            
+            
+        </StackPanel>
+    </Border>
+
+</Page>

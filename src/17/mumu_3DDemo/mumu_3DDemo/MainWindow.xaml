@@ -1,0 +1,31 @@
+﻿<Window x:Class="mumu_3DDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <TabControl>
+        <TabItem Header="2D示例的房子">
+            <Frame Source="HouseUsing2DDrawing.xaml"/>
+        </TabItem>
+        <TabItem Header="3D示例的房子">
+            <Frame Source="HouseUsing3D.xaml"/>
+        </TabItem >
+        <TabItem Header="用MatrixCamera模拟透视相机">
+            <Frame Source="PerspectiveByMatrixCamera.xaml"/>
+        </TabItem >
+        <TabItem Header="使用ScreenSpaceLines3D绘制的3D坐标系">
+            <Frame Source="Coordinates.xaml"/>
+        </TabItem >
+        <TabItem Header="立方体">
+            <Frame Source="Cube.xaml"/>
+        </TabItem >
+        <TabItem Header="球">
+            <Frame Source="Sphere.xaml"/>
+        </TabItem >
+        <TabItem Header="不同光源">
+            <Frame Source="Light.xaml"/>
+        </TabItem>
+        <TabItem Header="不同材质">
+            <Frame Source="Material.xaml"/>
+        </TabItem>
+    </TabControl>
+</Window>

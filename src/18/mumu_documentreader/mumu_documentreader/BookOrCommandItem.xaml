@@ -1,0 +1,38 @@
+﻿<StackPanel x:Class="mumu_documentreader.BookOrCommandItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Loaded="StackPanel_Loaded"
+    Orientation="Horizontal">
+
+    <Canvas Height="28" VerticalAlignment="Center" Margin="1">
+        <!--不规则多边形-->
+        <Path StrokeThickness="1" x:Name="MarkPath" Fill="Green">
+            
+            <Path.Stroke>
+                <SolidColorBrush Color="Black" />
+            </Path.Stroke>
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="True">
+                        <LineSegment Point="0, 24" />
+                        <LineSegment Point="78, 24"  />
+                        <LineSegment Point="78, 7"  />
+                        <LineSegment Point="85, 0"  />
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        <!--按钮-->
+        <Button Name="GoToMark">
+            <Button.ToolTip>
+                <ToolTip>到该位置</ToolTip>
+            </Button.ToolTip>
+            <TextBlock Name="TB" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Width="40"/>
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="GoToMenu"  Header="到....."></MenuItem>
+                    <MenuItem x:Name="DeleteMark" Header="删除"></MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+    </Canvas>
+</StackPanel>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="mumu_brushes.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="画刷" SizeToContent="WidthAndHeight">
+    <Grid>
+        <TabControl>
+            <TabItem Header="SolidColorBrushSyntax">
+                <Frame Source="solidcolorbrushsyntax.xaml"/>
+            </TabItem>
+            <TabItem Header="interactivelineargradientbrushexample">
+                <Frame Source="interactivelineargradientbrushexample.xaml"/>
+            </TabItem>
+            <TabItem Header=" interactiveradialgradientbrushexample">
+                <Frame Source=" interactiveradialgradientbrushexample.xaml"/>
+            </TabItem>
+           <TabItem Header=" VisualBrush">
+                <Frame Source=" VisualBrush.xaml"/>
+            </TabItem>
+            <TabItem Header=" interactivetilebrushexample">
+                <Frame Source=" interactivetilebrushexample.xaml"/>
+            </TabItem>
+            <TabItem Header=" MagnifyingGlassExample">
+                <Frame Source="MagnifyingGlassExample.xaml"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,67 @@
+﻿<Page x:Class="mumu_textelementdemo.TextBlockTextPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TextBlockTextPage">
+    <StackPanel>
+        <StackPanel
+      Background="{StaticResource headerBackground}"
+      Margin="0,0,0,0">
+            <TextBlock Margin="6" Foreground="White">
+        TextBlock的Text属性
+            </TextBlock>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Margin="10,5" FontSize="20" Text="Hello!&#10;Text!" />
+        </StackPanel>
+        <StackPanel
+      Background="{StaticResource headerBackground}"
+      Margin="0,0,0,0">
+            <TextBlock Margin="6" Foreground="White">
+        TextBlock的inlines属性
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Margin="10,5" FontSize="20">
+                <TextBlock.Inlines>
+                    <Run>Hello!</Run>
+                    <LineBreak/>
+                    <Run>Text!</Run>
+                </TextBlock.Inlines>
+            </TextBlock>
+            <TextBlock Margin="10,5" FontSize="30">
+                <TextBlock.Inlines>
+                    <Underline><Bold><Run  FontFamily="Font\#Lindsey">
+                        Hello!
+                    </Run>
+                    </Bold>
+                     </Underline>
+                    <LineBreak/>
+                    <Run>Text!</Run>
+                </TextBlock.Inlines>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel
+      Background="{StaticResource headerBackground}"
+      Margin="0,0,0,0">
+            <TextBlock Margin="6" Foreground="White">
+        其它文本控件
+            </TextBlock>
+        </StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <AccessText Grid.Row="0" >
+                s_hortcut
+            </AccessText>
+            <Button Click="Button_Click">
+                <AccessText >_Edit</AccessText>
+            </Button>
+            <Button Click="Button_Click">_Cut</Button>
+
+
+        </Grid>
+    </StackPanel>
+</Page>

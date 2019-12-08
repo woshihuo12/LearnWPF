@@ -1,0 +1,143 @@
+﻿<Page x:Class="mumu_flowdocument.AnnotationSample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:ann="clr-namespace:System.Windows.Annotations;assembly=PresentationFramework"
+    Title="AnnotationSample" Loaded="Page_Loaded" Unloaded="Page_Unloaded">
+    <Grid>
+        <FlowDocumentReader x:Name="reader">
+            <FlowDocument>
+                <FlowDocument.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Command="ApplicationCommands.Copy" />
+                        <Separator />
+                        <!-- Add a Highlight annotation to a user selection. -->
+                        <MenuItem Command="ann:AnnotationService.CreateHighlightCommand"
+                      Header="Add Highlight" />
+                        <!-- Add a Text Note annotation to a user selection. -->
+                        <MenuItem Command="ann:AnnotationService.CreateTextStickyNoteCommand"
+                      Header="Add Text Note" />
+                        <!-- Add an Ink Note annotation to a user selection. -->
+                        <MenuItem Command="ann:AnnotationService.CreateInkStickyNoteCommand"
+                      Header="Add Ink Note" />
+                        <Separator />
+                        <!-- Remove Highlights from a user selection. -->
+                        <MenuItem Command="ann:AnnotationService.ClearHighlightsCommand"
+                      Header="Remove Highlights" />
+                        <!-- Remove Text Notes and Ink Notes from a user selection. -->
+                        <MenuItem Command="ann:AnnotationService.DeleteStickyNotesCommand"
+                      Header="Remove Notes" />
+
+                        <MenuItem Command="ann:AnnotationService.DeleteAnnotationsCommand"
+                      Header="Remove Highlights &amp; Notes" />
+                    </ContextMenu>
+                </FlowDocument.ContextMenu>
+                <Table BorderThickness="1"  BorderBrush="Blue">
+                    <Table.Columns>
+                        <TableColumn Width="3*" />
+                        <TableColumn Width="7*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph FontFamily="黑体">
+                                    书名
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph >
+                                    木木的葵花宝典之WPF
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph FontFamily="黑体">
+                                    作者
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph >
+                                    李 响
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph FontFamily="黑体">
+                                    出版社
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph >
+                                    电子工业出版社
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph x:Name="para" FontSize="24" Background="AliceBlue">
+                    <Figure Width="100" Height="100"  HorizontalAnchor="ColumnRight" HorizontalOffset="-10" VerticalAnchor="ParagraphTop" VerticalOffset="-30">
+                        <BlockUIContainer>
+                            <Image Source="bee.png"/>
+                        </BlockUIContainer>
+                    </Figure>
+                    路由事件（Routed Event）
+                </Paragraph>
+                <Section FontFamily="华文仿宋">
+
+                    <Paragraph>
+                        黄蓉凝目看去，只见那两只玉蜂双翅上也都有字，那六个字也是一模一样，右翅是“情谷底”，左翅是“我在绝”。黄蓉大奇，暗想：“造物虽奇，也决造不出这样一批蜜蜂来之理。其中必有缘故。” ……
+                    </Paragraph>
+                    <Paragraph>
+                        黄蓉不答，只是轻轻念着：“情谷底，我在绝。情谷底，我在绝。”她念了几遍，随即省悟：“啊！那是‘我在绝情谷底’。是谁在绝情谷底啊？难道是襄儿？”心中怦怦乱跳……
+                    </Paragraph>
+                    <Paragraph TextAlignment="Right">
+                        ——《神雕侠侣：第三十八回 生死茫茫》
+                    </Paragraph>
+                </Section>
+                <Section LineHeight="25" FontSize="15">
+                    <Paragraph >
+                        这一段讲的是小龙女深陷绝情谷地，用花树上的细刺，在玉蜂翅上刺下‘我在绝情谷底’六字，盼望玉蜂飞上之后，能为人发现。结果蜂翅上的细字被周伯通发现，而给黄蓉隐约猜到了其中含义。本节内容包括：
+                    </Paragraph>
+                    <List >
+
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink NavigateUri="FlowDocumentPage.xaml#first">
+                                    从玉蜂说起，回顾.Net事件模型
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                什么是路由事件？
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                CLR事件足够完美，为什么还需要路由事件？
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                言归正传，话路由事件
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                路由事件的实例
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                </Section>
+                <Paragraph x:Name="first" FontSize="20" Background="AliceBlue">
+                    1.	从玉蜂说起，回顾.Net事件模型
+                </Paragraph>
+                <BlockUIContainer>
+                    <Image Source="路由事件.jpg"/>
+                </BlockUIContainer>
+            </FlowDocument>
+
+        </FlowDocumentReader>
+    </Grid>
+</Page>

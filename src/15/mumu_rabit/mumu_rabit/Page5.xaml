@@ -1,0 +1,160 @@
+﻿<Page x:Class="mumu_rabit.Page5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page5">
+    <Page.Resources>
+        
+    </Page.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="2">
+            <Grid Grid.Column="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.8*" />
+                    <RowDefinition Height="0.2*"/>
+                </Grid.RowDefinitions>
+                <Canvas  Background="AntiqueWhite" >
+                    <Image x:Name="rabit" 
+                           MouseEnter="rabit_MouseEnter" MouseLeave="rabit_MouseLeave" 
+                           Canvas.Left="100" Canvas.Top="100" Width="77.666" Height="96.666"                           
+                           RenderTransformOrigin="0.5 0.5"
+                           Stretch="Fill">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform x:Name="scale" ScaleX="1" ScaleY="1"/>
+                                <RotateTransform x:Name="rotate" Angle="0"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                        <Image.Source>
+                            <DrawingImage >
+                                <DrawingImage.Drawing>
+                                    <DrawingGroup >
+                                        <!--兔头-->
+                                        <DrawingGroup x:Name="drawinggrouphead">
+                                            <GeometryDrawing x:Name="geometrydrawinghead" Brush="{Binding ElementName=headcolor,Path=Fill}"
+                                                         Geometry="{StaticResource geometryhead1}"/>
+                                        </DrawingGroup>
+                                        <!--兔耳-->
+                                        <DrawingGroup >
+                                            <GeometryDrawing x:Name="drawinggroupear" Brush="{Binding ElementName=earcolor,Path=Fill}"
+                                                         Geometry="M223,126.777L221,117.11L219.333,110.444L219.333,102.444L222.667,98.11L227.667,96.11L235.333,95.444L237.333,98.11L238.667,105.444L237.667,110.444L238.667,118.11L238,122.777L223,126.77 
+                                                             M274.667,100.444L270,108.444L267.333,115.444L267,122.11L272.667,123.777L281.333,126.444L283.333,120.777L287,118.444L289.667,113.777L291,107.444L284,101.11L274.667,100.444z">
+
+                                            </GeometryDrawing>
+                                        </DrawingGroup>
+                                        <!--眼睛-->
+                                        <DrawingGroup x:Name="drawinggroupeye">
+                                            <!--眼眶-->
+                                            <GeometryDrawing x:Name="geometrydrawingeyeorbit" Brush="White" Geometry="{StaticResource geometryeyeorbit1}"/>
+                                            <!--眼皮-->
+                                            <GeometryDrawing x:Name="geoetrydrawingeyelid" Geometry="">
+                                                <GeometryDrawing.Brush>
+                                                    <LinearGradientBrush x:Name="eyelidbrush" EndPoint="1,0.5" StartPoint="0,0.5">
+                                                        <GradientStop Color="White" Offset="0"/>
+                                                        <GradientStop x:Name="eyelidbrushgradientstop" Color="#FF231915" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </GeometryDrawing.Brush>
+                                            </GeometryDrawing>
+                                            <!-- 眼珠-->
+                                            <GeometryDrawing x:Name="geometrydrawingeyeball" Brush="{Binding ElementName=eyecolor,Path=Fill}" Geometry="{StaticResource geometryeyeball1}"/>
+                                            
+                                        </DrawingGroup>
+                                        <DrawingGroup x:Name="mouth">
+                                            <!--嘴唇-->
+                                            <GeometryDrawing x:Name="geometrydrawingmouth" Brush="Black" Geometry="{StaticResource geometrymouth1}">
+                                                <GeometryDrawing.Pen>
+                                                    <Pen Brush="Black"/>
+                                                </GeometryDrawing.Pen>
+                                            </GeometryDrawing>
+                                            <!--舌头-->
+                                            <GeometryDrawing x:Name="geometrydrawinglongue" Brush="Red" Geometry="{StaticResource geometrylongue1}">
+                                                
+                                            </GeometryDrawing>
+                                        </DrawingGroup>                            
+                                    </DrawingGroup>
+                                </DrawingImage.Drawing>
+                            </DrawingImage>
+                        </Image.Source>
+                    </Image>
+                </Canvas>
+                    
+                <TextBlock Margin="15" HorizontalAlignment="Left" Grid.Row="1"  Width="198">
+            使用Drawing画成的兔子
+            <LineBreak/>
+                使用了4个DrawingGroup
+                </TextBlock>
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" BorderThickness="2" BorderBrush="Black">
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <!--位置-->
+                <TextBlock Grid.Row="0" Margin="10">位置</TextBlock>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <TextBlock Margin="10">左边距</TextBlock>
+                    <TextBox Width="60" Text="{Binding ElementName=rabit, Path=(Canvas.Left), UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                    <TextBlock Margin="10">上边距</TextBlock>
+                    <TextBox Width="60" Text="{Binding ElementName=rabit, Path=(Canvas.Top), UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                </StackPanel>
+
+                <!--大小-->
+                <TextBlock Grid.Row="2" Margin="10">大小</TextBlock>
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+                    <TextBlock Margin="10">水平方向缩放</TextBlock>
+                    <TextBox Width="40" Text="{Binding ElementName=scale, Path=ScaleX, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                    <TextBlock Margin="10">垂直方向缩放</TextBlock>
+                    <TextBox Width="40" Text="{Binding ElementName=scale, Path=ScaleY, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Orientation="Horizontal">
+                    <TextBlock Margin="10">角度</TextBlock>
+                    <TextBox Width="40" Text="{Binding ElementName=rotate, Path=Angle, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" />
+                </StackPanel>
+                <!--颜色-->
+                <TextBlock Grid.Row="5" Margin="10">颜色</TextBlock>
+                <Grid Grid.Row="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="5" Grid.Row="0" Grid.Column="0">兔耳</TextBlock>
+                    <Button x:Name="earcolorbtn" Grid.Row="0" Grid.Column="1" Click="Button_Click">
+                        <Rectangle x:Name="earcolor" Width="20" Height="20" Stroke="Black " Fill="#FFC9CACA"/>
+                    </Button>
+                    <TextBlock Margin="5" Grid.Row="0" Grid.Column="2">兔头</TextBlock>
+                    <Button x:Name="headcolorbtn" Grid.Row="0" Grid.Column="3" Click="Button_Click">
+                        <Rectangle x:Name="headcolor" Width="20" Height="20" Stroke="Black " Fill="#FFC9CACA"/>
+                    </Button>
+                    <TextBlock Margin="5" Grid.Row="1" Grid.Column="0">兔眼珠</TextBlock>
+                    <Button x:Name="eyecolorbtn" Grid.Row="1" Grid.Column="1" Click="Button_Click">
+                        <Rectangle x:Name="eyecolor" Width="20" Height="20" Stroke="Black " Fill="Black"/>
+                    </Button>
+
+                </Grid>
+                <TextBlock  Grid.Row="10" Margin="3" TextWrapping="Wrap" Height="27" Canvas.Left="110" Canvas.Top="246" Width="156">
+    <LineBreak />
+    点<Hyperlink NavigateUri="Page4.xaml">这儿</Hyperlink>到下一个兔子
+                </TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

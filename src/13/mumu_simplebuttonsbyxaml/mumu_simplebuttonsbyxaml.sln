@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_simplebuttonsbyxaml", "mumu_simplebuttonsbyxaml\mumu_simplebuttonsbyxaml.csproj", "{FA4289A1-D292-43AA-86F9-B63A050AC63E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA4289A1-D292-43AA-86F9-B63A050AC63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4289A1-D292-43AA-86F9-B63A050AC63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4289A1-D292-43AA-86F9-B63A050AC63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4289A1-D292-43AA-86F9-B63A050AC63E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

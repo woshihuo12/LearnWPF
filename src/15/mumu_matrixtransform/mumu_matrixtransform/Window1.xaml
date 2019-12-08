@@ -1,0 +1,21 @@
+﻿<Window x:Class="mumu_matrixtransform.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="600" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="用MatrixTransform模拟平移变换">
+                <Frame Source="Page1.xaml"/>
+            </TabItem>
+            <TabItem Header="用MatrixTransform模拟缩放变换">
+                <Frame Source="Page2.xaml"/>
+            </TabItem>
+            <TabItem Header="用MatrixTransform模拟旋转变换">
+                <Frame Source="Page3.xaml"/>
+            </TabItem>
+            <TabItem Header="用MatrixTransform模拟组合变换">
+                <Frame Source="Page4.xaml"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

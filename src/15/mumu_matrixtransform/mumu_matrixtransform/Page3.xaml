@@ -1,0 +1,33 @@
+﻿<Page x:Class="mumu_matrixtransform.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page3">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Row="0" Grid.Column="0">
+            <Rectangle  Canvas.Left="50" Canvas.Top="50" Width="200" Height="200" Stroke="Black" />
+            <Rectangle  Canvas.Left="50" Canvas.Top="50" Width="200" Height="200" Stroke="Black" StrokeDashArray="5,3" >
+                <Rectangle.RenderTransform>
+                    <RotateTransform Angle="45"/>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Canvas>
+        <TextBlock Text="&lt;RotateTransform Angle=&quot;45&quot;/>" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Canvas Grid.Row="1" Grid.Column="0">
+            <Rectangle  Canvas.Left="50" Canvas.Top="50" Width="200" Height="200" Stroke="Black" />
+            <Rectangle  Canvas.Left="50" Canvas.Top="50" Width="200" Height="200" Stroke="Black" StrokeDashArray="5,3" >
+                <Rectangle.RenderTransform>
+                    <MatrixTransform Matrix="0.7071 0.7071 -0.7071 0.7071 0 0"/>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Canvas>
+        <TextBlock Text="&lt;MatrixTransform Matrix=&quot; 0.7071 0.7071 -0.7071 0.7071 0 0&quot;/>" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Page>

@@ -1,0 +1,8 @@
+﻿<Page 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LooseXaml" JournalEntry.Name="松散XAML文件" WindowTitle ="窗口">
+    <Grid>
+        <TextBlock x:Name="text" FontSize="24"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="松散XAML文件"/>
+    </Grid>
+</Page>

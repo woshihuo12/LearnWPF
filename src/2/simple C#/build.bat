@@ -1,0 +1,1 @@
+csc mumu_hellocsharp2.cs /reference:"C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\presentationframework.dll" 

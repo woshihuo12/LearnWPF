@@ -1,0 +1,94 @@
+
+
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  WindowTitle="Rotate Animation Using Path Example"
+      x:Class="mumu_animationtype.rotateanimationusingpathexample" Loaded="Page_Loaded">
+    <StackPanel>
+        <Canvas HorizontalAlignment="Left" Margin="0" Width="340" Height="215" Background="{StaticResource MyGridBrushResource}">
+            <Canvas.RenderTransform>
+                <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+            </Canvas.RenderTransform>
+
+            <Path VerticalAlignment="Top" Margin="15,15,15,15"  x:Name="path1"
+          Data="M 10,100 C 35,0 135,0 160,100 180,190 285,200 310,100"
+          Stroke="Black" StrokeThickness="0"
+          Stretch="None" />
+
+            <Image Source="灰机.png" Width="30" Height="30" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform x:Name="MyRotateTransform" Angle="0" CenterX="15" CenterY="15" />
+                        <TranslateTransform x:Name="MyTranslateTransform" X="10" Y="100" />
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Canvas>
+
+        <StackPanel Orientation="Horizontal" Margin="40">
+            <StackPanel.Triggers>
+                <EventTrigger RoutedEvent="Button.Click"  SourceName="BeginButton">
+                    <BeginStoryboard Name="MyBeginStoryboard">
+                        <Storyboard Name="mystoryboard">
+                            <!-- 让角度沿路径运动 -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="MyRotateTransform"
+                Storyboard.TargetProperty="Angle"
+                Source="Angle" 
+                Duration="0:0:5" 
+                RepeatBehavior="Forever" AutoReverse="True" >
+                                <DoubleAnimationUsingPath.PathGeometry>
+                                    <PathGeometry Figures="M 10,100 C 35,0 135,0 160,100 180,190 285,200 310,100" />
+                                </DoubleAnimationUsingPath.PathGeometry>
+                            </DoubleAnimationUsingPath>
+
+                            <!-- 让X坐标沿路径运动. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="MyTranslateTransform"
+                Storyboard.TargetProperty="X"
+                Source="X" 
+                Duration="0:0:5" 
+                RepeatBehavior="Forever" AutoReverse="True" >
+                                <DoubleAnimationUsingPath.PathGeometry>
+                                    <PathGeometry Figures="M 10,100 C 35,0 135,0 160,100 180,190 285,200 310,100" />
+                                </DoubleAnimationUsingPath.PathGeometry>
+                            </DoubleAnimationUsingPath>
+
+                            <!-- 让Y坐标沿路径运动. -->
+                            <DoubleAnimationUsingPath
+                Storyboard.TargetName="MyTranslateTransform"
+                Storyboard.TargetProperty="Y"
+                Source="Y" 
+                Duration="0:0:5" 
+                RepeatBehavior="Forever" AutoReverse="True" >
+                                <DoubleAnimationUsingPath.PathGeometry>
+                                    <PathGeometry Figures="M 10,100 C 35,0 135,0 160,100 180,190 285,200 310,100" />
+                                </DoubleAnimationUsingPath.PathGeometry>
+                            </DoubleAnimationUsingPath>
+                            <DoubleAnimation Storyboard.TargetName="path1" Storyboard.TargetProperty="StrokeThickness"  To="2"
+                                             Duration="0:0:5" RepeatBehavior="Forever" AutoReverse="True">
+                            </DoubleAnimation>
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <!--<EventTrigger RoutedEvent="Button.Click" SourceName="PauseButton">
+                    <PauseStoryboard BeginStoryboardName="MyBeginStoryboard" />
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Button.Click" SourceName="ResumeButton">
+                    <ResumeStoryboard BeginStoryboardName="MyBeginStoryboard" />
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Button.Click" SourceName="StopButton">
+                    <StopStoryboard BeginStoryboardName="MyBeginStoryboard" />
+                </EventTrigger>-->
+            </StackPanel.Triggers>
+            <Button Name="BeginButton" Click="BeginButton_Click">开始</Button>
+            <Button Name="PauseButton" Click="PauseButton_Click">暂停</Button>
+            <Button Name="ResumeButton" Click="ResumeButton_Click">恢复</Button>
+            <Button Name="StopButton" Click="StopButton_Click">停止</Button>
+           
+
+        </StackPanel>
+
+    </StackPanel>
+</Page>

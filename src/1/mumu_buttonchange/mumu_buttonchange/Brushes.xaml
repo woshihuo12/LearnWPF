@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <LinearGradientBrush x:Key="TabItemNormalBackground" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+        <GradientStop Color="#FFECEBE6" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="TabControlPaneTopNormalBackground" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFFCFCFE" Offset="0"/>
+        <GradientStop Color="#FFF4F3EE" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="TabControlNormalBorderBrush" Color="#919B9C"/>
+
+
+
+    <GradientStopCollection x:Key="MyGlassGradientStopsResource">
+        <GradientStop Color="White" Offset="0.2" />
+        <GradientStop Color="Transparent" Offset="0.4" />
+        <GradientStop Color="White" Offset="0.5" />
+        <GradientStop Color="Transparent" Offset="0.75" />
+        <GradientStop Color="White" Offset="0.9" />
+        <GradientStop Color="Transparent" Offset="1.0" />
+    </GradientStopCollection>
+
+    <LinearGradientBrush x:Key="MyGlassBrushResource" 
+      StartPoint="0,0" EndPoint="1,1" Opacity="1" 
+      GradientStops="{StaticResource MyGlassGradientStopsResource}" />
+    
+</ResourceDictionary>

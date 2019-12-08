@@ -1,0 +1,16 @@
+﻿<Window x:Class="mumu_customcontrol.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local ="clr-namespace:mumu_customcontrol"
+    Title="自定义控件" Height="300" Width="300">
+    <Grid>
+        <TabControl Background="White">
+            <TabItem Header="从UserControl派生的控件">
+                <Frame Source="Page1.xaml"/>
+            </TabItem>
+            <TabItem Header="无外观控件">
+                <Frame Source="Page2.xaml"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

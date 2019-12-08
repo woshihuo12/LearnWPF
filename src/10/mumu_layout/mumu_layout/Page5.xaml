@@ -1,0 +1,17 @@
+﻿<Page x:Class="mumu_layout.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="281" d:DesignWidth="267"
+	Title="第四片桃树林by木木DockPanel模拟StackPanel">
+    <Border BorderThickness = "2" BorderBrush = "Black" Margin = "5">
+        <DockPanel>
+            <Button Background="#00000000"  DockPanel.Dock = "Top"  Content = "1"/>
+            <Button Background ="#FFFFCCFF" DockPanel.Dock = "Top"  Content = "2"/>
+            <Button Background ="#FFFF9BFF" DockPanel.Dock = "Top"  Content = "3"/>
+            <Button Background ="#FFFF00FF" DockPanel.Dock = "Top"  Content = "4 "/>
+        </DockPanel>
+    </Border>
+</Page>

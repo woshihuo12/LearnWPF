@@ -1,0 +1,16 @@
+﻿<Page x:Class="mumu_navigateanyone.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainPage.xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="0">
+            <Button Height="50" Width="60" Content="后退" Command="NavigationCommands.BrowseBack "/>
+            <Button Height="50" Width="60" Content="前进" Command="NavigationCommands.BrowseForward  "/>
+        </WrapPanel>
+        <Frame Grid.Row="1" Source="Page1.xaml"/>
+    </Grid>
+</Page>

@@ -1,0 +1,20 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+     <PropertyGroup>
+         <AssemblyName>mumu_hellowpf2</AssemblyName>
+         <OutputType>winexe</OutputType>
+     </PropertyGroup>
+     <ItemGroup>
+         <Reference Include="System" />
+         <Reference Include="WindowsBase" />
+         <Reference Include="PresentationCore" />
+         <Reference Include="PresentationFramework" />
+         <Reference Include="System.Xaml" />
+     </ItemGroup>
+     <ItemGroup>
+         <ApplicationDefinition Include="App.xaml" />
+         <Compile Include="App.xaml.cs" />
+         <Page Include="MainWindow.xaml" />
+         <Compile Include="MainWindow.xaml.cs" />
+     </ItemGroup>
+     <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

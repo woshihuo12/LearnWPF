@@ -1,0 +1,8 @@
+﻿<Window x:Class="mumu_wpfapplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Hello WPF" Margin="5" Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="mumu_customnamespace">
+</Property><Property Name="Solution File" Value="D:\code\VS2010RC\4\mumu_customnamespace\mumu_customnamespace.sln">
+</Property><Property Name="Date" Value="2010年2月28日">
+</Property><Property Name="Time" Value="13:51">
+</Property></Properties><Event ErrorLevel="0" Project="mumu_customnamespace" Source="mumu_customnamespace\mumu_customnamespace.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="mumu_customnamespace" Source="mumu_customnamespace\mumu_customnamespace.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="mumu_customlib" Source="mumu_customlib\mumu_customlib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="mumu_customlib" Source="mumu_customlib\mumu_customlib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="mumu_customnamespace.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="mumu_customnamespace.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="mumu_customnamespace" Source="mumu_customnamespace\mumu_customnamespace.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="mumu_customlib" Source="mumu_customlib\mumu_customlib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

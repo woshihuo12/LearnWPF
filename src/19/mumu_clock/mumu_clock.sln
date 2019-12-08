@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mumu_clock", "mumu_clock\mumu_clock.vcxproj", "{A21A9575-6814-4DD0-9BEB-0449FDB4F023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFClock", "WPFClock\WPFClock.csproj", "{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Debug|Win32.Build.0 = Debug|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Release|Win32.ActiveCfg = Release|Win32
+		{A21A9575-6814-4DD0-9BEB-0449FDB4F023}.Release|Win32.Build.0 = Release|Win32
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1C5E7813-41ED-4D8F-8D27-3117638CA3BE}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

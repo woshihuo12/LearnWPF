@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mumu_navigationevents", "mumu_navigationevents\mumu_navigationevents.csproj", "{5AB9D329-AE82-4DA3-BBC4-A47FD0132FCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AB9D329-AE82-4DA3-BBC4-A47FD0132FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB9D329-AE82-4DA3-BBC4-A47FD0132FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB9D329-AE82-4DA3-BBC4-A47FD0132FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB9D329-AE82-4DA3-BBC4-A47FD0132FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

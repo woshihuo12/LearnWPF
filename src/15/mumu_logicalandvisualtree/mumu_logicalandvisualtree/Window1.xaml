@@ -1,0 +1,84 @@
+﻿<Window x:Class="mumu_logicalandvisualtree.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="关于逻辑树和可视化树" Height="300" Width="300">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="DockPanel.Dock" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Width" Value="32"/>
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="DockPanel.Dock" Value="Left"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TreeView Grid.Row="0">
+            <TreeViewItem IsExpanded="True">
+                <TreeViewItem.Header>
+                    <DockPanel>
+                        <TextBlock Text="琅擐福地"/>
+                        <Image  Source="/image/琅擐福地.jpg"/>
+                    </DockPanel>
+                </TreeViewItem.Header>
+                <TreeViewItem IsExpanded="True">
+                    <TreeViewItem.Header>
+                        <DockPanel>
+                            <TextBlock  Text="木质书架"/>
+                            <Image  Source="/image/书架.jpg"/>
+                        </DockPanel>
+                    </TreeViewItem.Header>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <DockPanel>
+                                <TextBlock  Text="昆仑派"/>
+                                <Image  Source="/image/书.png"/>
+                            </DockPanel>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <DockPanel>
+                                <TextBlock  Text="少林派"/>
+                                <Image  Source="/image/书.png"/>
+                            </DockPanel>
+                        </TreeViewItem.Header>
+                        
+                    </TreeViewItem>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <DockPanel>
+                                <TextBlock  Text="缺少一阳指"/>
+                                <Image  Source="/image/问号.jpg"/>
+                            </DockPanel>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <DockPanel>
+                                <TextBlock  Text="缺少六脉神剑"/>
+                                <Image  Source="/image/问号.jpg"/>
+                            </DockPanel>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="逻辑树" Margin="5" Click="Button_Click" />
+            <Button Grid.Column="1" Content="可视化树" Margin="5" Click="Button_Click_1" />
+            <Button Grid.Column="2" Content="清空" Margin="5" Click="Button_Click_2"/>
+        </Grid>
+    </Grid>
+</Window>

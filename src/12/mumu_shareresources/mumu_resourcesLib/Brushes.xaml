@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local ="clr-namespace:mumu_resourcesLib">
+    <ImageBrush
+      x:Key="SadFaceBrush"
+      TileMode="Tile"
+      ViewportUnits="Absolute" Viewport="0 0 32 32"
+      ImageSource="sadface.jpg" Opacity="0.3">
+    </ImageBrush>
+    <ImageBrush
+      x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:mumuBrushes},ResourceId=happyfaceBrush}"
+      TileMode="Tile"
+      ViewportUnits="Absolute" Viewport="0 0 32 32"
+      ImageSource="/mumu_resourcesLib;component/happyface.jpg" Opacity="0.3">
+    </ImageBrush>
+</ResourceDictionary>

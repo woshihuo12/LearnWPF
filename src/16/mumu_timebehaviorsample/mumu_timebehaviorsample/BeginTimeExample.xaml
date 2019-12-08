@@ -1,0 +1,58 @@
+﻿<Page x:Class="mumu_timebehaviorsample.BeginTimeExample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:mumu_timebehaviorsample"
+    Title="BeginTimeExample" Width="500" Height="400">
+    <StackPanel Margin="20" Background="{StaticResource MyGridBrushResource}">
+        <TextBlock> 
+        动画 BeginTime: "0:0:0"</TextBlock>
+        <Rectangle Name="defaultBeginTimeRectangle" Width="20" Height="20" Fill="#AA3333FF" HorizontalAlignment="Left" />
+
+        <TextBlock Margin="0,20,0,0"> 
+        动画 BeginTime: "0:0:5"</TextBlock>
+        <Rectangle Name="delayedBeginTimeRectangle" Width="20" Height="20" Fill="#AA3333FF" HorizontalAlignment="Left" />
+
+        <TextBlock Margin="0,20,0,0">
+        动画 BeginTime: "-0:0:1"</TextBlock>
+        <Rectangle Name="precedentedAnimationWithDelayedParentRectangle" Width="20" Height="20" Fill="#AA3333FF" HorizontalAlignment="Left" />
+        
+        <TextBlock Margin="0,20,0,0"> 
+        父时间线 BeginTime: "0:0:5"<LineBreak/>
+        动画 BeginTime: "0:0:5"</TextBlock>
+        <Rectangle Name="delayedAnimationWithDelayedParentRectangle" Width="20" Height="20" Fill="#AA3333FF" HorizontalAlignment="Left" />
+
+
+
+        <!-- defaultBeginTimeRectangle,delayedBeginTimeRectangle,
+             precedentedAnimationWithDelayedParentRectangle,
+             delayedAnimationWithDelayedParentRectangle四个为应用动画的矩形-->
+        <Button Margin="0,30,0,0" HorizontalAlignment="Left">开始动画
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard>
+                        <Storyboard >
+
+                            <DoubleAnimation 
+                Storyboard.TargetName="defaultBeginTimeRectangle" Storyboard.TargetProperty="Width"
+                BeginTime="0:0:0" From="20" To="400" Duration="0:0:2"  FillBehavior="HoldEnd" />
+
+                            <DoubleAnimation Storyboard.TargetName="delayedBeginTimeRectangle" 
+                Storyboard.TargetProperty="Width"  
+                BeginTime="0:0:5" From="20" To="400" Duration="0:0:2" FillBehavior="HoldEnd" AutoReverse="True" RepeatBehavior="2x"/>
+                            
+                            <DoubleAnimation Storyboard.TargetName="precedentedAnimationWithDelayedParentRectangle" 
+                Storyboard.TargetProperty="Width"  
+                BeginTime="-0:0:1"  From="20" To="400" Duration="0:0:2"  />
+                            <ParallelTimeline BeginTime="0:0:5">
+                                <DoubleAnimation  
+                  Storyboard.TargetName="delayedAnimationWithDelayedParentRectangle" Storyboard.TargetProperty="Width" 
+                  BeginTime="0:0:5" From="20" To="400" Duration="0:0:2" FillBehavior="HoldEnd" />
+                            </ParallelTimeline>
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+    </StackPanel>
+</Page>
