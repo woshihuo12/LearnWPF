@@ -1,0 +1,12 @@
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\mumu_Button01.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\MainWindow.baml
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\MainWindow.g.cs
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\App.g.cs
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\mumu_Button01_MarkupCompile.cache
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\mumu_Button01.g.resources
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\mumu_Button01.Properties.Resources.resources
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\mumu_Button01.csproj.GenerateResource.cache
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\bin\Debug\mumu_Button01.exe
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\bin\Debug\mumu_Button01.pdb
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\mumu_Button01.exe
+D:\GitSource\LearnWPF\src\5\mumu_Button01\Step1\mumu_Button01\mumu_Button01\obj\x86\Debug\mumu_Button01.pdb

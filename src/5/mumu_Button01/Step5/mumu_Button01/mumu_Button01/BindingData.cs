@@ -8,7 +8,9 @@ namespace mumu_Button01
     class BindingData
     {
         public BindingData()
-        { ColorName = "Red"; }
+        {
+            ColorName = "Red";
+        }
 
         private string name = "Red";
 

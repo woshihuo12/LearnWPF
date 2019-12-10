@@ -35,7 +35,7 @@ namespace mumu_windowcs
             panel.Children.Add(btn);
 
             Button btn2 = new Button();
-            btn2.Content = "Hello XAML";
+            btn2.Content = "Hello XAML2";
             LinearGradientBrush brush = new LinearGradientBrush();
             brush.StartPoint = new Point(0, 0);
             brush.EndPoint = new Point(1, 1);

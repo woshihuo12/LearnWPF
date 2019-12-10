@@ -1,0 +1,12 @@
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\bin\Debug\mumu_appbyonlyxaml.exe
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\bin\Debug\mumu_appbyonlyxaml.pdb
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\mumu_appbyonlyxaml.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\Window1.baml
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\Window1.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\App.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\mumu_appbyonlyxaml_MarkupCompile.cache
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\mumu_appbyonlyxaml.g.resources
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\mumu_appbyonlyxaml.Properties.Resources.resources
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\mumu_appbyonlyxaml.csproj.GenerateResource.cache
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\mumu_appbyonlyxaml.exe
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlyxaml\mumu_appbyonlyxaml\obj\Debug\mumu_appbyonlyxaml.pdb

@@ -4,10 +4,11 @@
     
     xmlns:local="clr-namespace:mumu_customnamespace"
     Title="Window1" Height="300" Width="300">
-    <!--xmlns:customlib="clr-namespace:mumu_customlib;assembly=mumu_customlib"-->
+    <!--xmlns:local="clr-namespace:mumu_customlib;assembly=mumu_customlib"-->
+    <!--xmlns:local="clr-namespace:mumu_customnamespace"-->
     <Grid>
         <Button FontSize="14">
-            <local:Book  Price="$0.1">
+            <local:Book  Price="0.1">
                 欲练此功 必先自宫
             </local:Book>
         </Button>

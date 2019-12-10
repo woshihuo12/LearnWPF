@@ -18,6 +18,7 @@
         <!--资源支持-->
         <Label HorizontalAlignment="Center" VerticalAlignment="Center">资源支持</Label>
         <Button Grid.Row="0" Grid.Column="1"  Name="resouceBtn"  Margin="5" Background="{DynamicResource MyBrush}">金色按钮</Button>
+        <!--<Button Grid.Row="0" Grid.Column="1"  Name="resouceBtn"  Margin="5" Background="{StaticResource MyBrush}">金色按钮</Button>-->
         
         <!--样式支持-->
         <Label Grid.Row="0" Grid.Column ="2" HorizontalAlignment="Center" VerticalAlignment="Center">样式支持</Label>

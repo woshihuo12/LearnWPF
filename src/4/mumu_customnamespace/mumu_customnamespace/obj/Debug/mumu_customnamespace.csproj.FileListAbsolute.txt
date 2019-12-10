@@ -1,0 +1,16 @@
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\bin\Debug\mumu_customnamespace.exe
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\bin\Debug\mumu_customnamespace.pdb
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\bin\Debug\mumu_customlib.dll
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\bin\Debug\mumu_customlib.pdb
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\Window1.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\App.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace_MarkupCompile.cache
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\Window1.baml
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace.g.resources
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace.Properties.Resources.resources
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace.csproj.GenerateResource.cache
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace.csproj.CopyComplete
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace.exe
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\mumu_customnamespace.pdb
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customnamespace\obj\Debug\GeneratedInternalTypeHelper.g.cs

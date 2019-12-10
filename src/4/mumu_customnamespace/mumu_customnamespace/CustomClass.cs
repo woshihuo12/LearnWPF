@@ -10,7 +10,7 @@ namespace mumu_customnamespace
     [ContentProperty("Name")]
     public class Book
     {
-        //public Book() { }
+        public Book() { }
         public Book(string name, double price) { }
 
         [TypeConverter(typeof(StringConverter))]

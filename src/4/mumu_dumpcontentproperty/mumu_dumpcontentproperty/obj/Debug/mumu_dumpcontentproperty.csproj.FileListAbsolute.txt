@@ -1,0 +1,12 @@
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\bin\Debug\mumu_dumpcontentproperty.exe
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\bin\Debug\mumu_dumpcontentproperty.pdb
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\mumu_dumpcontentproperty.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\Window1.baml
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\Window1.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\App.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\mumu_dumpcontentproperty_MarkupCompile.cache
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\mumu_dumpcontentproperty.g.resources
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\mumu_dumpcontentproperty.Properties.Resources.resources
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\mumu_dumpcontentproperty.csproj.GenerateResource.cache
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\mumu_dumpcontentproperty.exe
+D:\GitSource\LearnWPF\src\4\mumu_dumpcontentproperty\mumu_dumpcontentproperty\obj\Debug\mumu_dumpcontentproperty.pdb

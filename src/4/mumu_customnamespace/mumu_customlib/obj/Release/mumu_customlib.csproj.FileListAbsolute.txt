@@ -1,0 +1,5 @@
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customlib\bin\Release\mumu_customlib.dll
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customlib\bin\Release\mumu_customlib.pdb
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customlib\obj\Release\mumu_customlib.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customlib\obj\Release\mumu_customlib.dll
+D:\GitSource\LearnWPF\src\4\mumu_customnamespace\mumu_customlib\obj\Release\mumu_customlib.pdb

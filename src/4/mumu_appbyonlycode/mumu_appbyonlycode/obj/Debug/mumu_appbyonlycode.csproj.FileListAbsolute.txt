@@ -1,0 +1,6 @@
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlycode\mumu_appbyonlycode\bin\Debug\mumu_appbyonlycode.exe.config
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlycode\mumu_appbyonlycode\bin\Debug\mumu_appbyonlycode.exe
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlycode\mumu_appbyonlycode\bin\Debug\mumu_appbyonlycode.pdb
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlycode\mumu_appbyonlycode\obj\Debug\mumu_appbyonlycode.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlycode\mumu_appbyonlycode\obj\Debug\mumu_appbyonlycode.exe
+D:\GitSource\LearnWPF\src\4\mumu_appbyonlycode\mumu_appbyonlycode\obj\Debug\mumu_appbyonlycode.pdb

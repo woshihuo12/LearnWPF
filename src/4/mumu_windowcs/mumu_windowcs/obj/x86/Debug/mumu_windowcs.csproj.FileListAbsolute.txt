@@ -1,0 +1,6 @@
+D:\GitSource\LearnWPF\src\4\mumu_windowcs\mumu_windowcs\bin\Debug\mumu_windowcs.exe.config
+D:\GitSource\LearnWPF\src\4\mumu_windowcs\mumu_windowcs\bin\Debug\mumu_windowcs.exe
+D:\GitSource\LearnWPF\src\4\mumu_windowcs\mumu_windowcs\bin\Debug\mumu_windowcs.pdb
+D:\GitSource\LearnWPF\src\4\mumu_windowcs\mumu_windowcs\obj\x86\Debug\mumu_windowcs.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\4\mumu_windowcs\mumu_windowcs\obj\x86\Debug\mumu_windowcs.exe
+D:\GitSource\LearnWPF\src\4\mumu_windowcs\mumu_windowcs\obj\x86\Debug\mumu_windowcs.pdb

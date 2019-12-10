@@ -1,0 +1,12 @@
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\bin\Debug\mumu_appbyxamlandcode2.exe
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\bin\Debug\mumu_appbyxamlandcode2.pdb
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\mumu_appbyxamlandcode2.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\MainWindow.baml
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\MainWindow.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\App.g.cs
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\mumu_appbyxamlandcode2_MarkupCompile.cache
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\mumu_appbyxamlandcode2.g.resources
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\mumu_appbyxamlandcode2.Properties.Resources.resources
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\mumu_appbyxamlandcode2.csproj.GenerateResource.cache
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\mumu_appbyxamlandcode2.exe
+D:\GitSource\LearnWPF\src\4\mumu_appbyxamlandcode2\mumu_appbyxamlandcode2\obj\Debug\mumu_appbyxamlandcode2.pdb
