@@ -11,3 +11,15 @@ D:\code\VS2010RC\5\mumu_Button04\mumu_Button04\obj\x86\Debug\GenerateResource.re
 D:\code\VS2010RC\5\mumu_Button04\mumu_Button04\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\code\VS2010RC\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.exe
 D:\code\VS2010RC\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.pdb
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.csprojAssemblyReference.cache
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\MainWindow.baml
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\MainWindow.g.cs
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\App.g.cs
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04_MarkupCompile.cache
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.g.resources
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.Properties.Resources.resources
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.csproj.GenerateResource.cache
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.exe
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\obj\x86\Debug\mumu_Button04.pdb
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\bin\Debug\mumu_Button04.exe
+D:\GitSource\LearnWPF\src\5\mumu_Button04\mumu_Button04\bin\Debug\mumu_Button04.pdb
